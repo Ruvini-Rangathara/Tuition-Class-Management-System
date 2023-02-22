@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="context" prefHeight="587.0" prefWidth="746.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.vidathya.tcms.controller.StaffManageFormController">
+   <children>
+      <AnchorPane prefHeight="587.0" prefWidth="746.0" styleClass="formPane" stylesheets="@../style/DashBoardStyle.css">
+         <children>
+            <ImageView fitHeight="587.0" fitWidth="746.0" opacity="0.5" pickOnBounds="true">
+               <image>
+                  <Image url="@../asset/image/background.jpg" />
+               </image>
+            </ImageView>
+            <Label layoutX="63.0" layoutY="177.0" prefHeight="21.0" prefWidth="136.0" text="Name                  : ">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Label>
+            <Label layoutX="156.0" layoutY="92.0" prefHeight="21.0" prefWidth="56.0" text="Date  :  ">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Label>
+            <Label layoutX="63.0" layoutY="261.0" prefHeight="21.0" prefWidth="124.0" text="NIC No               : ">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Label>
+            <Label layoutX="63.0" layoutY="303.0" prefHeight="21.0" prefWidth="136.0" text="Gender                : ">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Label>
+            <Label layoutX="63.0" layoutY="345.0" prefHeight="21.0" prefWidth="136.0" text="Address               : ">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Label>
+            <Label layoutX="63.0" layoutY="387.0" prefHeight="21.0" prefWidth="136.0" text="Contact No         : ">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Label>
+            <Label layoutX="63.0" layoutY="429.0" prefHeight="21.0" prefWidth="124.0" text="Email                  : ">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Label>
+            <Label layoutX="63.0" layoutY="471.0" prefHeight="21.0" prefWidth="124.0" text="Date Of Birth     : ">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Label>
+            <Label layoutX="63.0" layoutY="219.0" prefHeight="21.0" prefWidth="124.0" text="Job                      : ">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Label>
+            <Label layoutX="322.0" layoutY="31.0" opacity="0.6" prefHeight="61.0" prefWidth="307.0" text="Manage Staff" textFill="#610780">
+               <font>
+                  <Font name="Segoe UI" size="50.0" />
+               </font>
+            </Label>
+            <Label fx:id="lblDate" layoutX="215.0" layoutY="92.0" prefHeight="21.0" prefWidth="99.0" textFill="#861d1d">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Label>
+            <Label fx:id="lblInvalidStaffName" layoutX="209.0" layoutY="199.0" prefHeight="17.0" prefWidth="105.0" text="Invalid Staff Name" textFill="#d0312d" />
+            <Label fx:id="lblInvalidStaffNic" layoutX="209.0" layoutY="283.0" prefHeight="17.0" prefWidth="99.0" text="Invalid Staff NIC" textFill="#d0312d" />
+            <Label fx:id="lblInvalidStaffContactNo" layoutX="209.0" layoutY="409.0" prefHeight="17.0" prefWidth="136.0" text="Invalid Staff Contact No" textFill="#d0312d" />
+            <Label fx:id="lblInvalidStaffEmail" layoutX="209.0" layoutY="451.0" prefHeight="17.0" prefWidth="115.0" text="Invalid Staff Email" textFill="#d0312d" />
+            <Label fx:id="lblInvalidStaffDob" layoutX="209.0" layoutY="493.0" prefHeight="17.0" prefWidth="177.0" text="Invalid Date Format (2000-9-25)" textFill="#d0312d" />
+            <Button fx:id="btnUpdate" layoutX="508.0" layoutY="460.0" mnemonicParsing="false" onAction="#btnUpdateOnAction" prefHeight="30.0" prefWidth="156.0" styleClass="updateButton" stylesheets="@../style/DashBoardStyle.css" text="Update" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Label layoutX="63.0" layoutY="513.0" prefHeight="21.0" prefWidth="124.0" text="Salary                 : ">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Label>
+            <Label fx:id="lblInvalidStaffSalary" layoutX="209.0" layoutY="535.0" prefHeight="17.0" prefWidth="105.0" text="Invalid Staff Salary" textFill="#d0312d" />
+            <Label layoutX="63.0" layoutY="135.0" prefHeight="21.0" prefWidth="136.0" text="Staff ID               : ">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Label>
+            <ComboBox fx:id="cmbStaffId" layoutX="208.0" layoutY="131.0" onAction="#cmbStaffIdOnAction" opacity="0.9" prefHeight="4.0" prefWidth="243.0" styleClass="txtField" stylesheets="@../style/DashBoardStyle.css">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </ComboBox>
+            <TextField fx:id="txtName" layoutX="208.0" layoutY="173.0" onAction="#txtNameOnAction" opacity="0.9" prefHeight="6.0" prefWidth="243.0" styleClass="txtField" stylesheets="@../style/DashBoardStyle.css" />
+            <TextField fx:id="txtJob" layoutX="208.0" layoutY="215.0" onAction="#txtJobOnAction" opacity="0.9" prefHeight="2.0" prefWidth="243.0" styleClass="txtField" stylesheets="@../style/DashBoardStyle.css" />
+            <TextField fx:id="txtNic" layoutX="210.0" layoutY="258.0" onAction="#txtNicOnAction" opacity="0.9" prefHeight="0.0" prefWidth="243.0" styleClass="txtField" stylesheets="@../style/DashBoardStyle.css" />
+            <ComboBox fx:id="cmbGender" layoutX="208.0" layoutY="299.0" onAction="#cmbGenderOnAction" opacity="0.9" prefHeight="2.0" prefWidth="243.0" styleClass="txtField" stylesheets="@../style/DashBoardStyle.css">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </ComboBox>
+            <TextField fx:id="txtAddress" layoutX="208.0" layoutY="341.0" onAction="#txtAddressOnAction" opacity="0.9" prefHeight="9.0" prefWidth="243.0" styleClass="txtField" stylesheets="@../style/DashBoardStyle.css" />
+            <TextField fx:id="txtContactNo" layoutX="208.0" layoutY="383.0" onAction="#txtContactNoOnAction" opacity="0.9" prefHeight="17.0" prefWidth="243.0" styleClass="txtField" stylesheets="@../style/DashBoardStyle.css" />
+            <TextField fx:id="txtEmail" layoutX="208.0" layoutY="425.0" onAction="#txtEmailOnAction" opacity="0.9" prefHeight="4.0" prefWidth="243.0" styleClass="txtField" stylesheets="@../style/DashBoardStyle.css" />
+            <TextField fx:id="txtDob" layoutX="208.0" layoutY="467.0" onAction="#txtDobOnAction" opacity="0.9" prefHeight="4.0" prefWidth="243.0" styleClass="txtField" stylesheets="@../style/DashBoardStyle.css" />
+            <TextField fx:id="txtSalary" layoutX="208.0" layoutY="509.0" onAction="#txtSalaryOnAction" opacity="0.9" prefHeight="10.0" prefWidth="243.0" styleClass="txtField" stylesheets="@../style/DashBoardStyle.css" />
+            <Button fx:id="btnBack" layoutX="507.0" layoutY="508.0" mnemonicParsing="false" onAction="#btnBackOnAction" prefHeight="30.0" prefWidth="156.0" styleClass="backButton" stylesheets="@../style/DashBoardStyle.css" text="Back" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <ImageView fx:id="staffImage" fitHeight="95.0" fitWidth="95.0" layoutX="61.0" layoutY="21.0" pickOnBounds="true">
+               <image>
+                  <Image url="@../asset/image/adminImage.png" />
+               </image>
+            </ImageView>
+            <Button fx:id="btnBrowseImage" layoutX="506.0" layoutY="412.0" mnemonicParsing="false" onAction="#btnBrowseImageOnAction" prefHeight="30.0" prefWidth="156.0" styleClass="okButton" stylesheets="@../style/DashBoardStyle.css" text="Browse Image" textFill="WHITE" wrapText="true">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

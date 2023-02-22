@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="context" prefHeight="587.0" prefWidth="746.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.vidathya.tcms.controller.ReportFormController">
+   <children>
+      <AnchorPane prefHeight="587.0" prefWidth="746.0" styleClass="formPane" stylesheets="@../style/DashBoardStyle.css">
+         <children>
+            <ImageView fitHeight="587.0" fitWidth="746.0" opacity="0.5" pickOnBounds="true">
+               <image>
+                  <Image url="@../asset/image/background.jpg" />
+               </image>
+            </ImageView>
+            <Button fx:id="btnOk" layoutX="530.0" layoutY="517.0" mnemonicParsing="false" onAction="#btnOkOnAction" prefHeight="30.0" prefWidth="156.0" styleClass="searchButton" text="OK" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button fx:id="btnStaffReports" focusTraversable="false" layoutX="410.0" layoutY="315.0" mnemonicParsing="false" onAction="#btnStaffReportsOnAction" prefHeight="80.0" prefWidth="250.0" style="-fx-background-radius: 15;" styleClass="reportButton" stylesheets="@../style/DashBoardStyle.css" text="Staff Reports" textAlignment="CENTER" textFill="#86187b" wrapText="true">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <font>
+                  <Font name="System Bold" size="17.0" />
+               </font>
+            </Button>
+            <Button fx:id="btnTutorsReports" focusTraversable="false" layoutX="410.0" layoutY="180.0" mnemonicParsing="false" onAction="#btnTutorsReportsOnAction" prefHeight="80.0" prefWidth="250.0" style="-fx-background-radius: 15;" styleClass="reportButton" stylesheets="@../style/DashBoardStyle.css" text="Tutors Reports" textAlignment="CENTER" textFill="#86187b" wrapText="true">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <font>
+                  <Font name="System Bold" size="17.0" />
+               </font>
+            </Button>
+            <Label layoutX="439.0" layoutY="38.0" opacity="0.6" prefHeight="72.0" prefWidth="218.0" text="Reports" textFill="#610780">
+               <font>
+                  <Font name="Segoe UI" size="60.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="493.0" fitWidth="330.0" layoutX="20.0" layoutY="109.0" opacity="0.3" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../asset/image/ReportImage.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

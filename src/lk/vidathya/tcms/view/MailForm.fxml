@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="context" prefHeight="500.0" prefWidth="500.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.vidathya.tcms.controller.MailFormController">
+   <children>
+      <AnchorPane prefHeight="587.0" prefWidth="746.0" styleClass="formPane" stylesheets="@../style/DashBoardStyle.css" />
+      <ImageView fitHeight="587.0" fitWidth="746.0" opacity="0.71" pickOnBounds="true">
+         <image>
+            <Image url="@../asset/image/background.jpg" />
+         </image>
+      </ImageView>
+      <JFXTextField fx:id="txtRecipient" focusColor="#a49b9b" focusTraversable="false" layoutX="225.0" layoutY="46.0" prefHeight="25.0" prefWidth="384.0" promptText="recipient@gmail.com" unFocusColor="#a49b9b">
+         <cursor>
+            <Cursor fx:constant="TEXT" />
+         </cursor>
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="txtSubject" focusColor="#a49b9b" focusTraversable="false" layoutX="137.0" layoutY="252.0" onAction="#txtSubjectOnAction" prefHeight="25.0" prefWidth="472.0" promptText="Subject" unFocusColor="#a49b9b">
+         <cursor>
+            <Cursor fx:constant="TEXT" />
+         </cursor>
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </JFXTextField>
+      <Button fx:id="btnSend" layoutX="517.0" layoutY="543.0" mnemonicParsing="false" onAction="#btnSendOnAction" prefHeight="31.0" prefWidth="92.0" style="-fx-background-color: #3498db; -fx-background-radius: 30px;" text="Send" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <TextArea fx:id="txtText" focusTraversable="false" layoutX="137.0" layoutY="286.0" opacity="0.56" prefHeight="248.0" prefWidth="472.0" promptText="Message">
+         <cursor>
+            <Cursor fx:constant="TEXT" />
+         </cursor>
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </TextArea>
+      <Separator layoutX="282.0" layoutY="82.0" opacity="0.51" prefHeight="3.0" prefWidth="102.0" />
+      <Separator layoutX="430.0" layoutY="82.0" opacity="0.51" prefHeight="3.0" prefWidth="102.0" />
+      <Label layoutX="137.0" layoutY="102.0" prefHeight="17.0" prefWidth="92.0" text="To Group    : ">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Label>
+      <Label layoutX="137.0" layoutY="52.0" prefHeight="17.0" prefWidth="92.0" text="To                : ">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Label>
+      <Label layoutX="401.0" layoutY="74.0" text="or" textFill="#726767">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="cmbGroupRecipient" focusTraversable="false" layoutX="225.0" layoutY="97.0" onAction="#cmbGroupRecipientOnAction" opacity="0.6" prefHeight="17.0" prefWidth="384.0" styleClass="txtField" stylesheets="@../style/DashBoardStyle.css" />
+      <Button fx:id="btnDiscard" layoutX="39.0" layoutY="545.0" mnemonicParsing="false" onAction="#btnDiscardOnAction" prefHeight="25.0" prefWidth="64.0" styleClass="backButton" stylesheets="@../style/DashBoardStyle.css" text="Discard" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Label fx:id="lblClassCode" layoutX="137.0" layoutY="138.0" prefHeight="17.0" prefWidth="92.0" text="Class Code  : ">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="cmbClassCode" focusTraversable="false" layoutX="225.0" layoutY="133.0" onAction="#cmbClassCodeOnAction" opacity="0.6" prefHeight="3.0" prefWidth="384.0" styleClass="txtField" stylesheets="@../style/DashBoardStyle.css" />
+      <TextField fx:id="txtGrade" editable="false" focusTraversable="false" layoutX="225.0" layoutY="169.0" opacity="0.5" prefHeight="3.0" prefWidth="384.0" styleClass="txtField" stylesheets="@../style/DashBoardStyle.css" />
+      <Label layoutX="137.0" layoutY="174.0" prefHeight="17.0" prefWidth="92.0" text="Grade          : ">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtClassSubject" editable="false" focusTraversable="false" layoutX="225.0" layoutY="205.0" opacity="0.5" prefHeight="3.0" prefWidth="384.0" styleClass="txtField" stylesheets="@../style/DashBoardStyle.css" />
+      <Label layoutX="137.0" layoutY="210.0" prefHeight="17.0" prefWidth="92.0" text="Subject       : ">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="290.0" layoutY="1.0" opacity="0.6" prefHeight="43.0" prefWidth="216.0" text="New Massege" textFill="#610780">
+         <font>
+            <Font name="Segoe UI" size="35.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

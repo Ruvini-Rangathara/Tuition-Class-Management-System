@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.gn.lab.GNCalendarTile?>
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TitledPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="context" prefHeight="587.0" prefWidth="746.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.vidathya.tcms.controller.DashboardViewController">
+   <children>
+      <Pane layoutX="15.0" layoutY="12.0" prefHeight="561.0" prefWidth="717.0" styleClass="middlePane" stylesheets="@../style/DashBoardStyle.css">
+         <children>
+            <Pane layoutX="19.0" layoutY="421.0" prefHeight="118.0" prefWidth="215.0" style="-fx-background-color: #bd7dbd; -fx-background-radius: 20;">
+               <children>
+                  <Label alignment="CENTER" layoutX="99.0" layoutY="66.0" prefHeight="36.0" prefWidth="104.0" text="Students" textFill="#68226b">
+                     <font>
+                        <Font size="25.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="lblStudentCount" alignment="CENTER" layoutX="88.0" layoutY="9.0" prefHeight="36.0" prefWidth="128.0" text="200" textAlignment="CENTER" textFill="#68226b">
+                     <font>
+                        <Font size="45.0" />
+                     </font>
+                  </Label>
+                  <ImageView fitHeight="96.0" fitWidth="89.0" layoutX="12.0" layoutY="17.0" opacity="0.6" pickOnBounds="true">
+                     <image>
+                        <Image url="@../asset/icon/studentIcon1.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </Pane>
+            <Pane layoutX="251.0" layoutY="421.0" prefHeight="118.0" prefWidth="215.0" style="-fx-background-color: #c2aefa; -fx-background-radius: 20;">
+               <children>
+                  <Label alignment="CENTER" layoutX="97.0" layoutY="65.0" prefHeight="36.0" prefWidth="104.0" text="Tutors" textFill="#68226b">
+                     <font>
+                        <Font size="25.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="lblTutorCount" alignment="CENTER" layoutX="87.0" layoutY="8.0" prefHeight="36.0" prefWidth="128.0" text="200" textAlignment="CENTER" textFill="#68226b">
+                     <font>
+                        <Font size="45.0" />
+                     </font>
+                  </Label>
+                  <ImageView fitHeight="88.0" fitWidth="98.0" layoutX="16.0" layoutY="17.0" pickOnBounds="true">
+                     <image>
+                        <Image url="@../asset/icon/tutorIcon1.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </Pane>
+            <Pane layoutX="483.0" layoutY="421.0" prefHeight="118.0" prefWidth="215.0" style="-fx-background-color: #C576F6; -fx-background-radius: 20;">
+               <children>
+                  <Label alignment="CENTER" layoutX="99.0" layoutY="67.0" prefHeight="36.0" prefWidth="104.0" text="Halls" textFill="#68226b">
+                     <font>
+                        <Font size="25.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="lblHallCount" alignment="CENTER" layoutX="88.0" layoutY="10.0" prefHeight="36.0" prefWidth="128.0" text="200" textAlignment="CENTER" textFill="#68226b">
+                     <font>
+                        <Font size="45.0" />
+                     </font>
+                  </Label>
+                  <ImageView fitHeight="74.0" fitWidth="79.0" layoutX="22.0" layoutY="22.0" opacity="0.6" pickOnBounds="true">
+                     <image>
+                        <Image url="@../asset/icon/hallIcon1.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </Pane>
+            <GNCalendarTile layoutX="403.0" layoutY="208.0" prefHeight="200.0" prefWidth="300.0" styleClass="calender" stylesheets="@../style/DashBoardStyle.css" />
+            <TitledPane fx:id="contactUs" alignment="CENTER" focusTraversable="false" layoutX="403.0" layoutY="14.0" opacity="0.9" prefHeight="192.0" prefWidth="300.0" text="Contact Us" visible="false">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+               <content>
+                  <Pane prefHeight="115.0" prefWidth="298.0" style="-fx-background-color: #ffffff;">
+                     <children>
+                        <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="16.0" layoutY="11.0" pickOnBounds="true">
+                           <image>
+                              <Image url="@../asset/icon/gmailIcon.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="30.0" fitWidth="44.0" layoutX="9.0" layoutY="47.0" pickOnBounds="true">
+                           <image>
+                              <Image url="@../asset/icon/whatsAppIcon.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="25.0" fitWidth="25.0" layoutX="16.0" layoutY="86.0" pickOnBounds="true">
+                           <image>
+                              <Image url="@../asset/icon/callIcon.png" />
+                           </image>
+                        </ImageView>
+                        <Label fx:id="lblEmailAddress" layoutX="63.0" layoutY="17.0" prefHeight="19.0" prefWidth="212.0" text="vidathyainstitute@gmail.com">
+                           <font>
+                              <Font name="System Bold" size="13.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="lblWhatsAppContactNo" layoutX="64.0" layoutY="53.0" prefHeight="19.0" prefWidth="97.0" text="0786628489">
+                           <font>
+                              <Font name="System Bold" size="13.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="lblContactNo" layoutX="65.0" layoutY="89.0" prefHeight="19.0" prefWidth="97.0" text="0705811994">
+                           <font>
+                              <Font name="System Bold" size="13.0" />
+                           </font>
+                        </Label>
+                        <ImageView fitHeight="24.0" fitWidth="28.0" layoutX="16.0" layoutY="122.0" pickOnBounds="true">
+                           <image>
+                              <Image url="@../asset/icon/locationIcon.png" />
+                           </image>
+                        </ImageView>
+                        <Label fx:id="lblAddress" layoutX="65.0" layoutY="125.0" prefHeight="19.0" prefWidth="217.0" text="No 48 : Galle Road, Panadura">
+                           <font>
+                              <Font name="System Bold" size="13.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </Pane>
+               </content>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </TitledPane>
+            <JFXButton fx:id="btnContactUs" layoutX="403.0" layoutY="13.0" onAction="#btnContactUsOnAction" prefHeight="26.0" prefWidth="300.0" style="-fx-background-radius: 5; -fx-background-color: #c2aefa;" styleClass="datePane" stylesheets="@../style/DashBoardStyle.css" text="Contact Us" textFill="#68226b">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+            <Label layoutX="23.0" layoutY="43.0" prefHeight="31.0" prefWidth="128.0" text="Welcome to, " textFill="#68226b" wrapText="true">
+               <font>
+                  <Font size="19.0" />
+               </font>
+            </Label>
+            <Label layoutX="37.0" layoutY="72.0" prefHeight="31.0" prefWidth="326.0" text="Vidathya Higher Education Centre!" textFill="#68226b" wrapText="true">
+               <font>
+                  <Font name="System Bold" size="19.0" />
+               </font>
+            </Label>
+            <Label layoutX="22.0" layoutY="126.0" prefHeight="31.0" prefWidth="183.0" text="Learn effectively with us..." textFill="#68226b" wrapText="true">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="262.0" fitWidth="281.0" layoutX="37.0" layoutY="149.0" opacity="0.7" pickOnBounds="true">
+               <image>
+                  <Image url="@../asset/image/dashboardViewImage.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

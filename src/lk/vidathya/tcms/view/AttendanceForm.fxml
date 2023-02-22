@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="context" prefHeight="587.0" prefWidth="746.0" stylesheets="@../style/DashBoardStyle.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.vidathya.tcms.controller.AttendanceFormController">
+   <children>
+      <AnchorPane prefHeight="587.0" prefWidth="746.0" styleClass="formPane" stylesheets="@../style/DashBoardStyle.css" />
+      <ImageView fitHeight="587.0" fitWidth="746.0" opacity="0.5" pickOnBounds="true">
+         <image>
+            <Image url="@../asset/image/background.jpg" />
+         </image>
+      </ImageView>
+      <TextField fx:id="txtGrade" editable="false" focusTraversable="false" layoutX="160.0" layoutY="102.0" onAction="#txtGradeOnAction" prefHeight="29.0" prefWidth="199.0" styleClass="newTextField" stylesheets="@../style/DashBoardStyle.css">
+         <cursor>
+            <Cursor fx:constant="DEFAULT" />
+         </cursor>
+      </TextField>
+      <Label layoutX="44.0" layoutY="101.0" prefHeight="31.0" prefWidth="114.0" text="Grade             : ">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+      <Separator layoutX="342.0" layoutY="137.0" prefHeight="0.0" prefWidth="302.0" style="-fx-background-color: red;" visible="false" />
+      <TextField fx:id="txtSubject" editable="false" focusTraversable="false" layoutX="160.0" layoutY="134.0" onAction="#txtSubjectOnAction" prefHeight="29.0" prefWidth="199.0" style="-fx-background-color: #e4e6eb;" styleClass="newTextField" stylesheets="@../style/DashBoardStyle.css">
+         <cursor>
+            <Cursor fx:constant="DEFAULT" />
+         </cursor>
+      </TextField>
+      <Label layoutX="44.0" layoutY="133.0" prefHeight="31.0" prefWidth="114.0" text="Subject           : ">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtTutorName" editable="false" focusTraversable="false" layoutX="160.0" layoutY="166.0" onAction="#txtTutorNameOnAction" prefHeight="29.0" prefWidth="199.0" style="-fx-background-color: #e4e6eb;" styleClass="newTextField" stylesheets="@../style/DashBoardStyle.css">
+         <cursor>
+            <Cursor fx:constant="DEFAULT" />
+         </cursor>
+      </TextField>
+      <Label layoutX="44.0" layoutY="165.0" prefHeight="31.0" prefWidth="114.0" text="Tutor Name   : ">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="44.0" layoutY="69.0" prefHeight="31.0" prefWidth="114.0" text="Class Code     :   ">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="81.0" layoutY="11.0" opacity="0.6" prefHeight="48.0" prefWidth="375.0" text="Students Attendance" textFill="#610780">
+         <font>
+            <Font name="Segoe UI" size="40.0" />
+         </font>
+      </Label>
+      <Label layoutX="520.0" layoutY="36.0" prefHeight="31.0" prefWidth="87.0" text="Month     : ">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="519.0" layoutY="18.0" prefHeight="21.0" prefWidth="87.0" text="Date        :  ">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblDate" layoutX="601.0" layoutY="19.0" prefHeight="21.0" prefWidth="105.0" textFill="#861d1d">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblMonth" layoutX="604.0" layoutY="42.0" prefHeight="21.0" prefWidth="120.0" textFill="#861d1d">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+      <TableView fx:id="tblAttendance" layoutX="65.0" layoutY="210.0" onMouseClicked="#tblAttendanceOnMouseClicked" prefHeight="335.0" prefWidth="617.0">
+         <columns>
+            <TableColumn fx:id="colStudentId" prefWidth="91.0" text="Student ID" />
+            <TableColumn fx:id="colName" prefWidth="263.0" text="Name" />
+            <TableColumn fx:id="colPaymentStatus" prefWidth="132.0" text="Payment Status" />
+            <TableColumn fx:id="colFee" minWidth="0.0" prefWidth="130.0" text="Fee" />
+         </columns>
+      </TableView>
+      <Button fx:id="btnPayClassFee" layoutX="525.0" layoutY="550.0" mnemonicParsing="false" onAction="#btnPayClassFeeOnAction" prefHeight="30.0" prefWidth="156.0" styleClass="searchButton" stylesheets="@../style/DashBoardStyle.css" text="Pay Class Fee" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <ComboBox fx:id="cmbClassCode" focusTraversable="false" layoutX="160.0" layoutY="69.0" onAction="#cmbClassCodeOnAction" opacity="0.9" prefHeight="29.0" prefWidth="199.0" styleClass="newTextField" stylesheets="@../style/DashBoardStyle.css">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ComboBox>
+      <ImageView fitHeight="20.0" fitWidth="20.0" layoutX="35.0" layoutY="562.0" onMouseClicked="#backImageOnMouseClicked" opacity="0.6" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../asset/icon/arrowBackIcon.png" />
+         </image>
+      </ImageView>
+      <Pane layoutX="383.0" layoutY="68.0" prefHeight="129.0" prefWidth="329.0" styleClass="txtField" stylesheets="@../style/DashBoardStyle.css" />
+      <TextField fx:id="txtStudentId" editable="false" focusTraversable="false" layoutX="493.0" layoutY="79.0" onAction="#txtStudentIdOnAction" prefHeight="29.0" prefWidth="199.0" styleClass="newTextField" stylesheets="@../style/DashBoardStyle.css">
+         <cursor>
+            <Cursor fx:constant="DEFAULT" />
+         </cursor>
+      </TextField>
+      <Label layoutX="404.0" layoutY="78.0" prefHeight="31.0" prefWidth="105.0" text="Student ID    : ">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtStudentName" editable="false" focusTraversable="false" layoutX="493.0" layoutY="108.0" onAction="#txtStudentNameOnAction" prefHeight="29.0" prefWidth="199.0" style="-fx-background-color: #e4e6eb;" styleClass="newTextField" stylesheets="@../style/DashBoardStyle.css">
+         <cursor>
+            <Cursor fx:constant="DEFAULT" />
+         </cursor>
+      </TextField>
+      <Label layoutX="404.0" layoutY="107.0" prefHeight="31.0" prefWidth="97.0" text="Name           : ">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+      <RadioButton fx:id="btnAbsent" layoutX="441.0" layoutY="158.0" mnemonicParsing="false" text="Absent">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+         <toggleGroup>
+            <ToggleGroup fx:id="ap" />
+         </toggleGroup>
+      </RadioButton>
+      <RadioButton fx:id="btnPresent" layoutX="523.0" layoutY="159.0" mnemonicParsing="false" text="Present" toggleGroup="$ap">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </RadioButton>
+      <Button fx:id="btnMark" layoutX="611.0" layoutY="149.0" mnemonicParsing="false" onAction="#btnMarkOnAction" prefHeight="30.0" prefWidth="72.0" styleClass="okButton" stylesheets="@../style/DashBoardStyle.css" text="Mark" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+   </children>
+</AnchorPane>

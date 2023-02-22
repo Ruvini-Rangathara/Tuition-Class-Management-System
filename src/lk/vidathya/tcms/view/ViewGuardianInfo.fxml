@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="context" prefHeight="505.0" prefWidth="731.0" stylesheets="@../style/DashBoardStyle.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.vidathya.tcms.controller.ViewGuardianInfoController">
+   <children>
+      <AnchorPane prefHeight="505.0" prefWidth="731.0" styleClass="formPane" stylesheets="@../style/DashBoardStyle.css">
+         <children>
+            <Label layoutX="200.0" layoutY="50.0" prefHeight="21.0" prefWidth="92.0" text="Class Code  : ">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Label>
+            <ComboBox fx:id="cmbClassCode" layoutX="295.0" layoutY="46.0" onAction="#cmbClassCodeOnAction" opacity="0.9" prefHeight="8.0" prefWidth="180.0" styleClass="txtField" stylesheets="@../style/DashBoardStyle.css">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </ComboBox>
+            <Button fx:id="btnRefresh" layoutX="502.0" layoutY="97.0" mnemonicParsing="false" onAction="#btnRefreshOnAction" prefHeight="30.0" prefWidth="140.0" styleClass="okButton" stylesheets="@../style/DashBoardStyle.css" text="Refresh" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Label layoutX="200.0" layoutY="84.0" prefHeight="21.0" prefWidth="92.0" text="Grade         : ">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Label>
+            <TextField fx:id="txtGrade" editable="false" layoutX="295.0" layoutY="79.0" opacity="0.9" prefHeight="6.0" prefWidth="180.0" styleClass="txtField" stylesheets="@../style/DashBoardStyle.css" />
+            <Label layoutX="200.0" layoutY="116.0" prefHeight="21.0" prefWidth="92.0" text="Subject      : ">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Label>
+            <TextField fx:id="txtSubject" editable="false" layoutX="295.0" layoutY="111.0" opacity="0.9" prefHeight="1.0" prefWidth="180.0" styleClass="txtField" stylesheets="@../style/DashBoardStyle.css" />
+         </children></AnchorPane>
+      <TableView fx:id="tblGuardian" layoutX="22.0" layoutY="147.0" prefHeight="314.0" prefWidth="685.0">
+         <columns>
+            <TableColumn fx:id="colGuardianNic" prefWidth="105.0" text="Guardian NIC NO" />
+            <TableColumn fx:id="colName" prefWidth="178.0" text="Name" />
+            <TableColumn fx:id="colContactNo" prefWidth="98.0" text="Contact No" />
+            <TableColumn fx:id="colEmail" prefWidth="153.0" text="Email" />
+            <TableColumn fx:id="colOccupation" prefWidth="150.0" text="Occupation" />
+         </columns>
+      </TableView>
+      <Button fx:id="btnOk" layoutX="567.0" layoutY="467.0" mnemonicParsing="false" onAction="#btnOkOnAction" prefHeight="30.0" prefWidth="140.0" styleClass="searchButton" stylesheets="@../style/DashBoardStyle.css" text="Ok" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Label layoutX="207.0" opacity="0.6" prefHeight="48.0" prefWidth="300.0" text="Guardian Details" textFill="#610780">
+         <font>
+            <Font name="Segoe UI" size="40.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

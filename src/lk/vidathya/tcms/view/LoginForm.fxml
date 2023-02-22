@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="loginContext" prefHeight="700.0" prefWidth="1362.0" stylesheets="@../style/DashBoardStyle.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.vidathya.tcms.controller.LoginFormController">
+   <children>
+      <AnchorPane prefHeight="700.0" prefWidth="1362.0" styleClass="formPane" stylesheets="@../style/DashBoardStyle.css" />
+      <ImageView fitHeight="700.0" fitWidth="1362.0" opacity="0.5" pickOnBounds="true">
+         <image>
+            <Image url="@../asset/image/background.jpg" />
+         </image>
+      </ImageView>
+      <AnchorPane layoutX="793.0" layoutY="60.0" opacity="0.8" prefHeight="587.0" prefWidth="506.0" styleClass="datePane" stylesheets="@../style/DashBoardStyle.css">
+         <effect>
+            <DropShadow />
+         </effect>
+         <children>
+            <Separator layoutX="79.0" layoutY="215.0" prefHeight="0.0" prefWidth="135.0" style="-fx-background-color: #827777;" />
+            <Label layoutX="229.0" layoutY="203.0" prefHeight="26.0" prefWidth="63.0" text="Sign In" textFill="#827777">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Label>
+            <Separator layoutX="296.0" layoutY="215.0" prefHeight="0.0" prefWidth="135.0" style="-fx-background-color: #827777;" />
+            <JFXTextField fx:id="txtUsername" focusColor="#5b135d" focusTraversable="false" layoutX="97.0" layoutY="291.0" onAction="#txtUsernameOnAction" opacity="0.5" prefHeight="3.0" prefWidth="284.0" promptText="vidathya@gmail.com" style="-fx-background-radius: 0;" styleClass="password" stylesheets="@../style/DashBoardStyle.css" />
+            <Label layoutX="97.0" layoutY="267.0" prefHeight="21.0" prefWidth="79.0" text="Username ">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="97.0" layoutY="354.0" prefHeight="21.0" prefWidth="79.0" text="Password">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="103.0" fitWidth="212.0" layoutX="147.0" layoutY="49.0" pickOnBounds="true">
+               <image>
+                  <Image url="@../asset/image/instituteLogo2.png" />
+               </image>
+            </ImageView>
+            <JFXButton fx:id="btnForgetPassword" focusTraversable="false" layoutX="184.0" layoutY="478.0" onAction="#btnForgetPasswordOnAction" text="Forgot Password" textFill="#827777">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </JFXButton>
+            <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="395.0" layoutY="292.0" opacity="0.5" pickOnBounds="true">
+               <image>
+                  <Image url="@../asset/icon/username.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="395.0" layoutY="373.0" opacity="0.5" pickOnBounds="true">
+               <image>
+                  <Image url="@../asset/icon/password.png" />
+               </image>
+            </ImageView>
+            <JFXButton fx:id="btnLogin" focusTraversable="false" layoutX="95.0" layoutY="446.0" onAction="#btnLoginOnAction" opacity="0.7" prefHeight="29.0" prefWidth="284.0" style="-fx-background-radius: 10;" styleClass="button1" stylesheets="@../style/DashBoardStyle.css" text="Login" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <effect>
+                  <DropShadow />
+               </effect>
+            </JFXButton>
+            <JFXPasswordField fx:id="txtPassword" focusColor="#5b135d" focusTraversable="false" layoutX="97.0" layoutY="376.0" onAction="#txtPasswordOnAction" opacity="0.5" prefHeight="3.0" prefWidth="284.0" promptText="************" style="-fx-background-radius: 0;" styleClass="password" stylesheets="@../style/DashBoardStyle.css" />
+            <Separator layoutX="173.0" layoutY="537.0" prefHeight="0.0" prefWidth="135.0" style="-fx-background-color: #827777;" />
+            <Label layoutX="159.0" layoutY="538.0" prefHeight="26.0" prefWidth="160.0" text="Terms Of Use Privacy Policy" textFill="#827777">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+            <Label fx:id="lblInvalidUsername" layoutX="98.0" layoutY="322.0" prefHeight="17.0" prefWidth="96.0" text="Invalid username" textFill="#d0312d" />
+            <Label fx:id="lblInvalidPassword" layoutX="96.0" layoutY="406.0" prefHeight="17.0" prefWidth="96.0" text="Invalid password" textFill="#d0312d" />
+            <Label fx:id="lblPasswordHintLabel" layoutX="142.0" layoutY="502.0" prefHeight="17.0" prefWidth="96.0" text="Password Hint  : " textFill="#d0312d">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+            <Label fx:id="lblPasswordHint" layoutX="241.0" layoutY="503.0" prefHeight="17.0" prefWidth="128.0" textFill="#d0312d">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <Separator layoutX="737.0" layoutY="58.0" opacity="0.5" orientation="VERTICAL" prefHeight="587.0" prefWidth="0.0" />
+      <ImageView fitHeight="387.0" fitWidth="676.0" layoutX="31.0" layoutY="120.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../asset/image/instituteLogo.png" />
+         </image>
+      </ImageView>
+      <Button layoutX="946.0" layoutY="654.0" mnemonicParsing="false" onAction="#btnAdminOnAction" text="Admin" visible="false" />
+      <Button layoutX="1078.0" layoutY="654.0" mnemonicParsing="false" onAction="#btnAssistantOnAction" text="Assistant" visible="false" />
+      <Label fx:id="lblDate" alignment="CENTER" layoutX="263.0" layoutY="465.0" prefHeight="27.0" prefWidth="212.0" styleClass="contactPane" text="2022-November-11" textAlignment="CENTER" textFill="#8d8b8b">
+         <font>
+            <Font name="Arial" size="23.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

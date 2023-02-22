@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="context" prefHeight="587.0" prefWidth="746.0" stylesheets="@../style/DashBoardStyle.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.vidathya.tcms.controller.ManageExtraClassController">
+   <children>
+      <AnchorPane prefHeight="587.0" prefWidth="746.0" styleClass="formPane" stylesheets="@../style/DashBoardStyle.css" />
+      <ImageView fitHeight="587.0" fitWidth="746.0" opacity="0.5" pickOnBounds="true">
+         <image>
+            <Image url="@../asset/image/background.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="484.0" layoutY="33.0" prefHeight="21.0" prefWidth="56.0" text="Date  :  ">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="117.0" layoutY="434.0" prefHeight="21.0" prefWidth="124.0" text="Hall No              : ">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="117.0" layoutY="348.0" prefHeight="21.0" prefWidth="124.0" text="Start Time          : ">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="117.0" layoutY="391.0" prefHeight="21.0" prefWidth="124.0" text="End Time            : ">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="117.0" layoutY="269.0" prefHeight="21.0" prefWidth="124.0" text="Tutor Name        :">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="64.0" layoutY="24.0" opacity="0.6" prefHeight="48.0" prefWidth="348.0" text="Manage Extra Class" textFill="#610780">
+         <font>
+            <Font name="Segoe UI" size="40.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblDate" layoutX="535.0" layoutY="33.0" prefHeight="21.0" prefWidth="105.0" textFill="#861d1d">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblInvalidStarTime" layoutX="252.0" layoutY="370.0" prefHeight="17.0" prefWidth="115.0" text="Invalid Time Format" textFill="#d0312d" />
+      <Label fx:id="lblInvalidEndTime" layoutX="252.0" layoutY="413.0" prefHeight="17.0" prefWidth="115.0" text="Invalid Time Format" textFill="#d0312d" />
+      <Label layoutX="117.0" layoutY="230.0" prefHeight="21.0" prefWidth="124.0" text="Grade                 : ">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="117.0" layoutY="191.0" prefHeight="21.0" prefWidth="124.0" text="Subject               : ">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="117.0" layoutY="152.0" prefHeight="21.0" prefWidth="124.0" text="Class Code         :">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="117.0" layoutY="308.0" prefHeight="21.0" prefWidth="124.0" text="Date                   : ">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtTutorName" editable="false" focusTraversable="false" layoutX="251.0" layoutY="265.0" onAction="#txtTutorNameOnAction" opacity="0.9" prefHeight="0.0" prefWidth="284.0" styleClass="txtField" stylesheets="@../style/DashBoardStyle.css" />
+      <TextField fx:id="txtStartTime" focusTraversable="false" layoutX="251.0" layoutY="344.0" onAction="#txtStartTimeOnAction" opacity="0.9" prefHeight="0.0" prefWidth="284.0" styleClass="txtField" stylesheets="@../style/DashBoardStyle.css" />
+      <TextField fx:id="txtEndTime" focusTraversable="false" layoutX="251.0" layoutY="387.0" onAction="#txtEndTimeOnAction" opacity="0.9" prefHeight="5.0" prefWidth="284.0" styleClass="txtField" stylesheets="@../style/DashBoardStyle.css" />
+      <ComboBox fx:id="cmbHallNo" focusTraversable="false" layoutX="251.0" layoutY="430.0" onAction="#cmbHallNoOnAction" opacity="0.9" prefHeight="8.0" prefWidth="284.0" styleClass="txtField" stylesheets="@../style/DashBoardStyle.css" />
+      <TextField fx:id="txtSubject" editable="false" focusTraversable="false" layoutX="251.0" layoutY="187.0" onAction="#txtSubjectOnAction" opacity="0.9" prefHeight="17.0" prefWidth="284.0" styleClass="txtField" stylesheets="@../style/DashBoardStyle.css" />
+      <TextField fx:id="txtGrade" editable="false" focusTraversable="false" layoutX="251.0" layoutY="226.0" onAction="#txtGradeOnAction" opacity="0.9" prefHeight="0.0" prefWidth="284.0" styleClass="txtField" stylesheets="@../style/DashBoardStyle.css" />
+      <DatePicker fx:id="dteDate" editable="false" focusTraversable="false" layoutX="251.0" layoutY="304.0" onAction="#dteDateOnAction" prefHeight="0.0" prefWidth="284.0" styleClass="txtField" stylesheets="@../style/DashBoardStyle.css" />
+      <Label layoutX="117.0" layoutY="113.0" prefHeight="21.0" prefWidth="124.0" text="EClass Code       :">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+      <Button fx:id="btnDelete" layoutX="565.0" layoutY="517.0" mnemonicParsing="false" onAction="#btnDeleteOnAction" prefHeight="30.0" prefWidth="156.0" styleClass="cancelButton" stylesheets="@../style/DashBoardStyle.css" text="Deactivate" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button fx:id="btnUpdate" layoutX="565.0" layoutY="464.0" mnemonicParsing="false" onAction="#btnUpdateOnAction" prefHeight="30.0" prefWidth="156.0" style=": #4169e1;" styleClass="updateButton" stylesheets="@../style/DashBoardStyle.css" text="Update" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button fx:id="btnBack" layoutX="43.0" layoutY="517.0" mnemonicParsing="false" onAction="#btnBackOnAction" prefHeight="30.0" prefWidth="156.0" style=": #4169e1;" styleClass="backButton" stylesheets="@../style/DashBoardStyle.css" text="Back" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <ComboBox fx:id="cmbClassCode" focusTraversable="false" layoutX="252.0" layoutY="148.0" onAction="#cmbClassCodeOnAction" opacity="0.9" prefHeight="0.0" prefWidth="284.0" styleClass="txtField" stylesheets="@../style/DashBoardStyle.css" />
+      <ComboBox fx:id="cmbEClassCode" focusTraversable="false" layoutX="252.0" layoutY="109.0" onAction="#cmbEClassCodeOnAction" opacity="0.9" prefHeight="17.0" prefWidth="284.0" styleClass="txtField" stylesheets="@../style/DashBoardStyle.css" />
+      <Label layoutX="483.0" layoutY="54.0" prefHeight="21.0" prefWidth="176.0" text="EClass Hall Resevation No :  ">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblEClassHallReservationNo" layoutX="654.0" layoutY="54.0" prefHeight="21.0" prefWidth="87.0" textFill="#861d1d">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

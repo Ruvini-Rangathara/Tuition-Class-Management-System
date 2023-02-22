@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="context" prefHeight="505.0" prefWidth="731.0" stylesheets="@../style/DashBoardStyle.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.vidathya.tcms.controller.ViewClassStudentController">
+   <children>
+      <AnchorPane prefHeight="505.0" prefWidth="731.0" styleClass="formPane" stylesheets="@../style/DashBoardStyle.css" />
+      <TableView fx:id="tblClassStudent" layoutX="36.0" layoutY="131.0" prefHeight="285.0" prefWidth="668.0">
+         <columns>
+            <TableColumn fx:id="colStudentId" prefWidth="73.0" text="Student ID" />
+            <TableColumn fx:id="colName" prefWidth="182.0" text="Name" />
+            <TableColumn fx:id="colEmail" prefWidth="197.0" text="Email" />
+            <TableColumn fx:id="colContactNo" prefWidth="108.0" text="Contact No" />
+            <TableColumn fx:id="colJoinDate" prefWidth="107.0" text="Join Date" />
+         </columns>
+      </TableView>
+      <Button fx:id="btnOk" layoutX="572.0" layoutY="461.0" mnemonicParsing="false" onAction="#btnOkOnAction" prefHeight="30.0" prefWidth="132.0" styleClass="searchButton" stylesheets="@../style/DashBoardStyle.css" text="Ok" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Label layoutX="230.0" opacity="0.6" prefHeight="37.0" prefWidth="294.0" text="Class-Students Details" textFill="#610780">
+         <font>
+            <Font name="Segoe UI" size="30.0" />
+         </font>
+      </Label>
+      <Button fx:id="btnRefresh" layoutX="581.0" layoutY="77.0" mnemonicParsing="false" onAction="#btnRefreshOnAction" prefHeight="31.0" prefWidth="132.0" styleClass="okButton" stylesheets="@../style/DashBoardStyle.css" text="Refresh" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Label layoutX="317.0" layoutY="83.0" prefHeight="21.0" prefWidth="113.0" text="Subject          :   ">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtSubject" editable="false" layoutX="426.0" layoutY="79.0" onAction="#txtSubjectOnAction" opacity="0.9" prefHeight="0.0" prefWidth="143.0" styleClass="txtField" stylesheets="@../style/DashBoardStyle.css" />
+      <Label layoutX="45.0" layoutY="53.0" prefHeight="21.0" prefWidth="105.0" text="Class Code  :   ">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="45.0" layoutY="84.0" prefHeight="21.0" prefWidth="105.0" text="Grade          :   ">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtGrade" editable="false" layoutX="153.0" layoutY="80.0" onAction="#txtGradeOnAction" opacity="0.9" prefHeight="0.0" prefWidth="143.0" styleClass="txtField" stylesheets="@../style/DashBoardStyle.css" />
+      <Label layoutX="317.0" layoutY="52.0" prefHeight="21.0" prefWidth="113.0" text="Tutor Name  :   ">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtTutorName" editable="false" layoutX="426.0" layoutY="48.0" onAction="#txtTutorNameOnAction" opacity="0.9" prefHeight="13.0" prefWidth="143.0" styleClass="txtField" stylesheets="@../style/DashBoardStyle.css" />
+      <Label layoutX="537.0" layoutY="423.0" prefHeight="21.0" prefWidth="84.0" text="Count        :   ">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtCount" editable="false" layoutX="612.0" layoutY="419.0" onAction="#txtCountOnAction" opacity="0.9" prefHeight="31.0" prefWidth="92.0" styleClass="txtField" stylesheets="@../style/DashBoardStyle.css" />
+      <ComboBox fx:id="cmbClassCode" layoutX="153.0" layoutY="49.0" onAction="#cmbClassCodeOnAction" opacity="0.9" prefHeight="1.0" prefWidth="143.0" styleClass="txtField" stylesheets="@../style/DashBoardStyle.css">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ComboBox>
+   </children>
+</AnchorPane>

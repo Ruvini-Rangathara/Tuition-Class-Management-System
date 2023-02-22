@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.ColorAdjust?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="context" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="587.0" prefWidth="746.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.vidathya.tcms.controller.StudentRegistrationFormController">
+   <children>
+      <AnchorPane prefHeight="587.0" prefWidth="746.0" styleClass="formPane" stylesheets="@../style/DashBoardStyle.css">
+         <children>
+            <ImageView fitHeight="587.0" fitWidth="746.0" opacity="0.5" pickOnBounds="true">
+               <image>
+                  <Image url="@../asset/image/background.jpg" />
+               </image>
+            </ImageView>
+            <Label layoutX="22.0" layoutY="159.0" prefHeight="21.0" prefWidth="124.0" text="Student Name  : ">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Label>
+            <Label layoutX="143.0" layoutY="109.0" prefHeight="21.0" prefWidth="56.0" text="Date  :  ">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Label>
+            <Label layoutX="22.0" layoutY="204.0" prefHeight="21.0" prefWidth="124.0" text="NIC No              : ">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Label>
+            <Label layoutX="22.0" layoutY="249.0" prefHeight="21.0" prefWidth="124.0" text="Gender              : ">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Label>
+            <Label layoutX="22.0" layoutY="294.0" prefHeight="21.0" prefWidth="124.0" text="Address             : ">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Label>
+            <Label layoutX="22.0" layoutY="339.0" prefHeight="21.0" prefWidth="124.0" text="Contact No       : ">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Label>
+            <Label layoutX="22.0" layoutY="384.0" prefHeight="21.0" prefWidth="124.0" text="Email                 : ">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Label>
+            <Label layoutX="22.0" layoutY="429.0" prefHeight="21.0" prefWidth="124.0" text="Date Of Birth   : ">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Label>
+            <Label layoutX="22.0" layoutY="474.0" prefHeight="21.0" prefWidth="124.0" text="Age                   : ">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Label>
+            <Label layoutX="22.0" layoutY="519.0" prefHeight="21.0" prefWidth="124.0" text="Grade                :">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Label>
+            <Label layoutX="387.0" layoutY="189.0" prefHeight="21.0" prefWidth="132.0" text="Guardian Name  : ">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Label>
+            <Label layoutX="387.0" layoutY="234.0" prefHeight="21.0" prefWidth="132.0" text="NIC No                : ">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Label>
+            <Label layoutX="387.0" layoutY="279.0" prefHeight="21.0" prefWidth="132.0" text="Contact No         : ">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Label>
+            <Label layoutX="387.0" layoutY="324.0" prefHeight="21.0" prefWidth="132.0" text="Email                   : ">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Label>
+            <Label layoutX="387.0" layoutY="369.0" prefHeight="21.0" prefWidth="132.0" text="Occupation         : ">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Label>
+            <Label layoutX="143.0" layoutY="86.0" prefHeight="21.0" prefWidth="99.0" text="Student ID   : ">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Label>
+            <Label layoutX="250.0" layoutY="8.0" opacity="0.6" prefHeight="61.0" prefWidth="470.0" text="Student Registration" textFill="#610780">
+               <font>
+                  <Font name="Segoe UI" size="50.0" />
+               </font>
+            </Label>
+            <Label layoutX="476.0" layoutY="140.0" prefHeight="28.0" prefWidth="154.0" text="Guardian Details" textFill="#61077f">
+               <font>
+                  <Font size="19.0" />
+               </font>
+            </Label>
+            <Button fx:id="btnRegister" layoutX="572.0" layoutY="542.0" mnemonicParsing="false" onAction="#btnRegisterOnAction" prefHeight="30.0" prefWidth="156.0" style=": #4169e1;" styleClass="searchButton" stylesheets="@../style/DashBoardStyle.css" text="Register" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <CheckBox fx:id="checkBoxPaid" layoutX="473.0" layoutY="456.0" mnemonicParsing="false" onAction="#checkBoxPaidOnAction" prefHeight="19.0" prefWidth="173.0" text="Registration fees paid.">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </CheckBox>
+            <Label fx:id="lblStudentId" layoutX="242.0" layoutY="86.0" prefHeight="21.0" prefWidth="88.0" textFill="#861d1d">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Label>
+            <Label fx:id="lblDate" layoutX="201.0" layoutY="109.0" prefHeight="21.0" prefWidth="99.0" textFill="#861d1d">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Label>
+            <Separator layoutX="375.0" layoutY="152.0" opacity="0.3" orientation="VERTICAL" prefHeight="395.0" prefWidth="5.0" />
+            <Button fx:id="btnCancel" layoutX="392.0" layoutY="541.0" mnemonicParsing="false" onAction="#btnCancelOnAction" prefHeight="30.0" prefWidth="156.0" styleClass="cancelButton" stylesheets="@../style/DashBoardStyle.css" text="Cancel" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Label fx:id="lblInvalidStudentName" layoutX="148.0" layoutY="182.0" prefHeight="17.0" prefWidth="115.0" text="Invalid Student Name" textFill="#d0312d" />
+            <Label fx:id="lblInvalidStudentNic" layoutX="148.0" layoutY="228.0" prefHeight="17.0" prefWidth="115.0" text="Invalid Student NIC" textFill="#d0312d" />
+            <Label fx:id="lblInvalidStudentContactNo" layoutX="148.0" layoutY="362.0" prefHeight="17.0" prefWidth="145.0" text="Invalid Student Contact No" textFill="#d0312d" />
+            <Label fx:id="lblInvalidStudentEmail" layoutX="148.0" layoutY="407.0" prefHeight="17.0" prefWidth="124.0" text="Invalid Student Email" textFill="#d0312d" />
+            <Label fx:id="lblInvalidStudentDob" layoutX="148.0" layoutY="452.0" prefHeight="17.0" prefWidth="173.0" text="Invalid Date Format (2000-9-25)" textFill="#d0312d" />
+            <Label fx:id="lblInvalidGuardianName" layoutX="522.0" layoutY="211.0" prefHeight="17.0" prefWidth="124.0" text="Invalid Guardian Name" textFill="#d0312d" />
+            <Label fx:id="lblInvalidGuardianNic" layoutX="522.0" layoutY="256.0" prefHeight="17.0" prefWidth="124.0" text="Invalid Guardian NIC" textFill="#d0312d" />
+            <Label fx:id="lblInvalidGuardianContactNo" layoutX="523.0" layoutY="301.0" prefHeight="17.0" prefWidth="161.0" text="Invalid Guardian Contact No" textFill="#d0312d" />
+            <Label fx:id="lblInvalidGuardianEmail" layoutX="522.0" layoutY="346.0" prefHeight="17.0" prefWidth="132.0" text="Invalid Guardian Email" textFill="#d0312d" />
+            <Label layoutX="444.0" layoutY="417.0" opacity="0.29" prefHeight="31.0" prefWidth="233.0" style="-fx-background-radius: 5;" styleClass="logOutButton" stylesheets="@../style/DashBoardStyle.css" />
+            <Label layoutX="453.0" layoutY="422.0" prefHeight="21.0" prefWidth="132.0" text="Registration Fee  : ">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Label>
+            <Label fx:id="lblRegistrationFee" layoutX="598.0" layoutY="422.0" prefHeight="21.0" prefWidth="73.0" text="1000.00" textFill="#861d1d">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Label>
+            <ComboBox fx:id="cmbStudentGender" layoutX="147.0" layoutY="246.0" onAction="#cmbStudentGenderOnAction" opacity="0.9" prefHeight="6.0" prefWidth="217.0" styleClass="txtField" stylesheets="@../style/DashBoardStyle.css">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </ComboBox>
+            <TextField fx:id="txtStudentName" layoutX="147.0" layoutY="156.0" onAction="#txtStudentNameOnAction" opacity="0.9" prefHeight="17.0" prefWidth="217.0" styleClass="txtField" stylesheets="@../style/DashBoardStyle.css" />
+            <TextField fx:id="txtStudentAddress" layoutX="147.0" layoutY="291.0" onAction="#txtStudentAddressOnAction" opacity="0.9" prefHeight="3.0" prefWidth="217.0" styleClass="txtField" stylesheets="@../style/DashBoardStyle.css" />
+            <TextField fx:id="txtStudentNic" layoutX="147.0" layoutY="201.0" onAction="#txtStudentNicOnAction" opacity="0.9" prefHeight="6.0" prefWidth="217.0" styleClass="txtField" stylesheets="@../style/DashBoardStyle.css" />
+            <TextField fx:id="txtStudentContactNo" layoutX="147.0" layoutY="336.0" onAction="#txtStudentContactNoOnAction" opacity="0.9" prefHeight="6.0" prefWidth="217.0" styleClass="txtField" stylesheets="@../style/DashBoardStyle.css" />
+            <TextField fx:id="txtStudentEmail" layoutX="147.0" layoutY="381.0" onAction="#txtStudentEmailOnAction" opacity="0.9" prefHeight="7.0" prefWidth="217.0" styleClass="txtField" stylesheets="@../style/DashBoardStyle.css" />
+            <TextField fx:id="txtStudentDob" layoutX="147.0" layoutY="426.0" onAction="#txtStudentDobOnAction" opacity="0.9" prefHeight="9.0" prefWidth="217.0" styleClass="txtField" stylesheets="@../style/DashBoardStyle.css" />
+            <TextField fx:id="txtStudentAge" editable="false" layoutX="147.0" layoutY="471.0" onAction="#txtStudentAgeOnAction" opacity="0.9" prefHeight="1.0" prefWidth="217.0" styleClass="txtField" stylesheets="@../style/DashBoardStyle.css" />
+            <ComboBox fx:id="cmbGrade" layoutX="147.0" layoutY="516.0" onAction="#cmbGradeOnAction" opacity="0.9" prefHeight="3.0" prefWidth="217.0" styleClass="txtField" stylesheets="@../style/DashBoardStyle.css">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </ComboBox>
+            <TextField fx:id="txtGuardianName" layoutX="521.0" layoutY="185.0" onAction="#txtGuardianNameOnAction" opacity="0.9" prefHeight="9.0" prefWidth="217.0" styleClass="txtField" stylesheets="@../style/DashBoardStyle.css" />
+            <TextField fx:id="txtGuardianNic" layoutX="521.0" layoutY="230.0" onAction="#txtGuardianNicOnAction" opacity="0.9" prefHeight="0.0" prefWidth="217.0" styleClass="txtField" stylesheets="@../style/DashBoardStyle.css" />
+            <TextField fx:id="txtGuardianContactNo" layoutX="521.0" layoutY="275.0" onAction="#txtGuardianContactNoOnAction" opacity="0.9" prefHeight="4.0" prefWidth="217.0" styleClass="txtField" stylesheets="@../style/DashBoardStyle.css" />
+            <TextField fx:id="txtGuardianEmail" layoutX="521.0" layoutY="320.0" onAction="#txtGuardianEmailOnAction" opacity="0.9" prefHeight="0.0" prefWidth="217.0" styleClass="txtField" stylesheets="@../style/DashBoardStyle.css" />
+            <TextField fx:id="txtOccupation" layoutX="521.0" layoutY="365.0" onAction="#txtOccupationOnAction" opacity="0.9" prefHeight="1.0" prefWidth="217.0" styleClass="txtField" stylesheets="@../style/DashBoardStyle.css" />
+            <ImageView fx:id="studentImage" fitHeight="95.0" fitWidth="95.0" layoutX="44.0" layoutY="33.0" pickOnBounds="true">
+               <image>
+                  <Image url="@../asset/image/adminImage.png" />
+               </image>
+            </ImageView>
+            <Button fx:id="btnBrowseImage" layoutX="573.0" layoutY="497.0" mnemonicParsing="false" onAction="#btnBrowseImageOnAction" prefHeight="30.0" prefWidth="156.0" styleClass="okButton" stylesheets="@../style/DashBoardStyle.css" text="Browse Image" textFill="WHITE" wrapText="true">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+         </children>
+         <effect>
+            <ColorAdjust />
+         </effect>
+      </AnchorPane>
+   </children>
+</AnchorPane>

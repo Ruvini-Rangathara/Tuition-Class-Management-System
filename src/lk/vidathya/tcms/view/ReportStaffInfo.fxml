@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="context" prefHeight="587.0" prefWidth="746.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.vidathya.tcms.controller.ReportStaffInfoController">
+   <children>
+      <AnchorPane prefHeight="587.0" prefWidth="746.0" styleClass="formPane" stylesheets="@../style/DashBoardStyle.css">
+         <children>
+            <ImageView fitHeight="587.0" fitWidth="746.0" opacity="0.5" pickOnBounds="true">
+               <image>
+                  <Image url="@../asset/image/background.jpg" />
+               </image>
+            </ImageView>
+            <TableView fx:id="tblStaffInfo" layoutX="20.0" layoutY="81.0" prefHeight="359.0" prefWidth="706.0">
+               <columns>
+                  <TableColumn fx:id="colStaffId" prefWidth="61.0" text="Staff ID" />
+                  <TableColumn fx:id="colName" prefWidth="159.0" text="Name" />
+                  <TableColumn fx:id="colJob" prefWidth="101.0" text="Job" />
+                  <TableColumn fx:id="colNicNo" prefWidth="106.0" text="NIC No" />
+                  <TableColumn fx:id="colContactNo" prefWidth="106.0" text="Contact No" />
+                  <TableColumn fx:id="colEmail" prefWidth="172.0" text="Email" />
+               </columns>
+            </TableView>
+            <Button fx:id="btnOk" layoutX="572.0" layoutY="542.0" mnemonicParsing="false" onAction="#btnOkOnAction" prefHeight="30.0" prefWidth="156.0" styleClass="searchButton" stylesheets="@../style/DashBoardStyle.css" text="Ok" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Label layoutX="243.0" layoutY="9.0" opacity="0.6" prefHeight="61.0" prefWidth="265.0" text="Staff Details" textFill="#610780">
+               <font>
+                  <Font name="Segoe UI" size="50.0" />
+               </font>
+            </Label>
+            <Button fx:id="btnGeneratePDF" layoutX="571.0" layoutY="499.0" mnemonicParsing="false" onAction="#btnGeneratePDFOnAction" prefHeight="30.0" prefWidth="156.0" styleClass="okButton" stylesheets="@../style/DashBoardStyle.css" text="Generate PDF" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button fx:id="btnPrintReport" layoutX="402.0" layoutY="500.0" mnemonicParsing="false" onAction="#btnPrintReportOnAction" prefHeight="30.0" prefWidth="156.0" styleClass="okButton" stylesheets="@../style/DashBoardStyle.css" text="Print Report" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Label layoutX="543.0" layoutY="446.0" prefHeight="21.0" prefWidth="101.0" text="Count        :   ">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Label>
+            <TextField fx:id="txtCount" editable="false" layoutX="637.0" layoutY="442.0" onAction="#txtCountOnAction" opacity="0.9" prefHeight="21.0" prefWidth="88.0" styleClass="txtField" stylesheets="@../style/DashBoardStyle.css" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

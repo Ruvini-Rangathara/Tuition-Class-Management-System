@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="context" prefHeight="505.0" prefWidth="731.0" stylesheets="@../style/DashBoardStyle.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.vidathya.tcms.controller.ViewRegistrationPaymentsController">
+   <children>
+      <AnchorPane prefHeight="505.0" prefWidth="731.0" styleClass="formPane" stylesheets="@../style/DashBoardStyle.css">
+         <children>
+            <Label layoutX="98.0" layoutY="62.0" prefHeight="21.0" prefWidth="78.0" text="Year       :   ">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Label>
+            <TextField fx:id="txtYear" layoutX="180.0" layoutY="57.0" onAction="#txtYearOnAction" opacity="0.9" prefHeight="21.0" prefWidth="153.0" styleClass="txtField" stylesheets="@../style/DashBoardStyle.css" />
+         </children></AnchorPane>
+      <TableView fx:id="tblRegistrationPayments" layoutX="14.0" layoutY="97.0" prefHeight="351.0" prefWidth="703.0">
+         <columns>
+            <TableColumn fx:id="colPaymentCode" prefWidth="89.0" text="Payment Code" />
+            <TableColumn fx:id="colStudentId" prefWidth="75.0" text="Student ID" />
+            <TableColumn fx:id="colStudentName" prefWidth="168.0" text="Student Name" />
+            <TableColumn fx:id="colDate" prefWidth="90.0" text="Date" />
+            <TableColumn fx:id="colAmount" prefWidth="69.0" text="Amount" />
+            <TableColumn fx:id="colStaffId" prefWidth="78.0" text="Staff ID" />
+            <TableColumn fx:id="colStaffName" prefWidth="133.0" text="Staff Name" />
+         </columns>
+      </TableView>
+      <Button fx:id="btnOk" layoutX="577.0" layoutY="460.0" mnemonicParsing="false" onAction="#btnOkOnAction" prefHeight="30.0" prefWidth="140.0" styleClass="searchButton" stylesheets="@../style/DashBoardStyle.css" text="Ok" textFill="WHITE">
+         <font>
+            <Font name="System Bold Italic" size="15.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Label layoutX="159.0" layoutY="2.0" opacity="0.6" prefHeight="37.0" prefWidth="420.0" text="Students Registration Payments" textFill="#610780">
+         <font>
+            <Font name="Segoe UI" size="30.0" />
+         </font>
+      </Label>
+      <Label layoutX="372.0" layoutY="62.0" prefHeight="21.0" prefWidth="92.0" text="Month        : ">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="cmbMonth" layoutX="467.0" layoutY="58.0" onAction="#cmbMonthOnAction" opacity="0.9" prefHeight="9.0" prefWidth="153.0" styleClass="txtField" stylesheets="@../style/DashBoardStyle.css">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ComboBox>
+   </children>
+</AnchorPane>

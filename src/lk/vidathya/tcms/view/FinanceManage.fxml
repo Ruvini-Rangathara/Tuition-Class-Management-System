@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="financeManageContext" prefHeight="587.0" prefWidth="746.0" stylesheets="@../style/DashBoardStyle.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.vidathya.tcms.controller.FinanceManageController">
+   <children>
+      <AnchorPane prefHeight="587.0" prefWidth="746.0" styleClass="formPane" stylesheets="@../style/DashBoardStyle.css" />
+      <ImageView fitHeight="587.0" fitWidth="746.0" opacity="0.52" pickOnBounds="true">
+         <image>
+            <Image url="@../asset/image/background.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="396.0" layoutY="160.0" prefHeight="21.0" prefWidth="205.0" text="Student Registration Fee">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblInvalidRegistrationFee" layoutX="396.0" layoutY="210.0" prefHeight="17.0" prefWidth="133.0" text="Invalid Registration Fee" textFill="#d0312d" />
+      <Label layoutX="395.0" layoutY="242.0" prefHeight="21.0" prefWidth="205.0" text="Tutor Salary Rate">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblInvalidSalaryRate" layoutX="395.0" layoutY="291.0" prefHeight="17.0" prefWidth="119.0" text="Invalid Salary Rate" textFill="#d0312d" />
+      <TextField fx:id="txtRegistrationFee" focusTraversable="false" layoutX="396.0" layoutY="182.0" onAction="#txtRegistrationFeeOnAction" opacity="0.9" prefHeight="9.0" prefWidth="220.0" styleClass="txtField" stylesheets="@../style/DashBoardStyle.css" />
+      <TextField fx:id="txtSalaryRate" focusTraversable="false" layoutX="394.0" layoutY="263.0" onAction="#txtSalaryRateOnAction" opacity="0.9" prefHeight="0.0" prefWidth="220.0" styleClass="txtField" stylesheets="@../style/DashBoardStyle.css" />
+      <Button fx:id="btnRegistrationFeeUpdate" layoutX="631.0" layoutY="182.0" mnemonicParsing="false" onAction="#btnRegistrationFeeUpdateOnAction" prefHeight="30.0" prefWidth="77.0" styleClass="searchButton" stylesheets="@../style/DashBoardStyle.css" text="Update" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button fx:id="btnSalaryRateUpdate" layoutX="629.0" layoutY="263.0" mnemonicParsing="false" onAction="#btnSalaryRateUpdateOnAction" prefHeight="30.0" prefWidth="77.0" styleClass="searchButton" stylesheets="@../style/DashBoardStyle.css" text="Update" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button fx:id="btnClassFeeInfo" layoutX="54.0" layoutY="48.0" mnemonicParsing="false" onAction="#btnClassFeeInfoOnAction" prefHeight="90.0" prefWidth="240.0" styleClass="reportButton" stylesheets="@../style/DashBoardStyle.css" text="Class Fee Information" textAlignment="JUSTIFY" textFill="WHITE" wrapText="true">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnStaffSalaryInfo" layoutX="54.0" layoutY="149.0" mnemonicParsing="false" onAction="#btnStaffSalaryInfoOnAction" prefHeight="90.0" prefWidth="240.0" styleClass="reportButton" stylesheets="@../style/DashBoardStyle.css" text="Staff Salary Information" textAlignment="CENTER" textFill="WHITE" wrapText="true">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnIncomeExpenditure" layoutX="54.0" layoutY="351.0" mnemonicParsing="false" onAction="#btnIncomeExpenditureOnAction" prefHeight="90.0" prefWidth="240.0" styleClass="reportButton" stylesheets="@../style/DashBoardStyle.css" text="Income &amp; Expenditure" textAlignment="CENTER" textFill="WHITE" wrapText="true">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnPayStaffSalaries" layoutX="54.0" layoutY="452.0" mnemonicParsing="false" onAction="#btnPayStaffSalariesOnAction" prefHeight="90.0" prefWidth="240.0" styleClass="reportButton" stylesheets="@../style/DashBoardStyle.css" text="Pay Staff Salaries" textAlignment="CENTER" textFill="WHITE" wrapText="true">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnPayTutorSalaries" layoutX="54.0" layoutY="250.0" mnemonicParsing="false" onAction="#btnPayTutorSalariesOnAction" prefHeight="90.0" prefWidth="240.0" styleClass="reportButton" stylesheets="@../style/DashBoardStyle.css" text="Pay Tutor Salaries" textAlignment="CENTER" textFill="WHITE" wrapText="true">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnOk" layoutX="531.0" layoutY="515.0" mnemonicParsing="false" onAction="#btnOkOnAction" prefHeight="30.0" prefWidth="156.0" styleClass="okButton" text="OK" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Label layoutX="396.0" layoutY="78.0" prefHeight="21.0" prefWidth="205.0" text="Institute Email Address">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblInvalidEmailAddress" layoutX="394.0" layoutY="128.0" prefHeight="17.0" prefWidth="133.0" text="Invalid Email Address" textFill="#d0312d" />
+      <TextField fx:id="txtEmail" focusTraversable="false" layoutX="394.0" layoutY="100.0" onAction="#txtEmailOnAction" opacity="0.9" prefHeight="11.0" prefWidth="220.0" styleClass="txtField" stylesheets="@../style/DashBoardStyle.css" />
+      <Button fx:id="btnEmailUpdate" layoutX="629.0" layoutY="100.0" mnemonicParsing="false" onAction="#btnEmailUpdateOnAction" prefHeight="30.0" prefWidth="77.0" styleClass="searchButton" stylesheets="@../style/DashBoardStyle.css" text="Update" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Label layoutX="396.0" layoutY="316.0" prefHeight="21.0" prefWidth="205.0" text="Contact No">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblInvalidContactNo" layoutX="395.0" layoutY="362.0" prefHeight="17.0" prefWidth="119.0" text="Invalid Contact No" textFill="#d0312d" />
+      <TextField fx:id="txtContactNo" focusTraversable="false" layoutX="395.0" layoutY="336.0" onAction="#txtContactNoOnAction" opacity="0.9" prefHeight="0.0" prefWidth="220.0" styleClass="txtField" stylesheets="@../style/DashBoardStyle.css" />
+      <Button fx:id="btnContactNoUpdate" layoutX="630.0" layoutY="336.0" mnemonicParsing="false" onAction="#btnContactNoUpdateOnAction" prefHeight="30.0" prefWidth="77.0" styleClass="searchButton" stylesheets="@../style/DashBoardStyle.css" text="Update" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Label layoutX="397.0" layoutY="395.0" prefHeight="21.0" prefWidth="205.0" text="WhatsApp Contact No">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblInvalidWhatsAppContactNo" layoutX="397.0" layoutY="443.0" prefHeight="17.0" prefWidth="119.0" text="Invalid Contact No" textFill="#d0312d" />
+      <TextField fx:id="txtWhatsAppContactNo" focusTraversable="false" layoutX="397.0" layoutY="417.0" onAction="#txtWhatsAppContactNoOnAction" opacity="0.9" prefHeight="0.0" prefWidth="220.0" styleClass="txtField" stylesheets="@../style/DashBoardStyle.css" />
+      <Button fx:id="btnWhatsAppContactNoUpdate" layoutX="633.0" layoutY="417.0" mnemonicParsing="false" onAction="#btnWhatsAppContactNoUpdateOnAction" prefHeight="30.0" prefWidth="77.0" styleClass="searchButton" stylesheets="@../style/DashBoardStyle.css" text="Update" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Separator layoutX="338.0" layoutY="119.0" opacity="0.6" orientation="VERTICAL" prefHeight="349.0" prefWidth="26.0" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="dashboardAssistantContext" prefHeight="700.0" prefWidth="1362.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.vidathya.tcms.controller.DashboardAssistantController">
+   <children>
+      <ImageView fitHeight="700.0" fitWidth="1362.0" opacity="0.7" pickOnBounds="true">
+         <image>
+            <Image url="@../asset/image/background.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="80.0" fitWidth="176.0" layoutX="36.0" layoutY="13.0" opacity="0.7" pickOnBounds="true">
+         <image>
+            <Image url="@../asset/image/instituteLogo2.png" />
+         </image>
+      </ImageView>
+      <AnchorPane layoutX="12.0" layoutY="106.0" opacity="0.85" prefHeight="587.0" prefWidth="220.0" styleClass="pane1" stylesheets="@../style/DashBoardStyle.css">
+         <children>
+            <Button fx:id="btnStudents" focusTraversable="false" layoutX="7.0" layoutY="121.0" mnemonicParsing="false" onAction="#btnStudentsOnAction" prefHeight="11.0" prefWidth="204.0" styleClass="button1" text="Students" textFill="WHITE">
+               <font>
+                  <Font size="17.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button fx:id="btnStudentAttendance" focusTraversable="false" layoutX="12.0" layoutY="168.0" mnemonicParsing="false" onAction="#btnStudentAttendanceOnAction" prefHeight="11.0" prefWidth="204.0" styleClass="button1" stylesheets="@../style/DashBoardStyle.css" text="Student Attendance" textFill="WHITE">
+               <font>
+                  <Font size="17.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button fx:id="btnStudentsPayments" focusTraversable="false" layoutX="7.0" layoutY="211.0" mnemonicParsing="false" onAction="#btnStudentsPaymentsOnAction" prefHeight="11.0" prefWidth="204.0" styleClass="button1" stylesheets="@../style/DashBoardStyle.css" text="Students Payments" textFill="WHITE">
+               <font>
+                  <Font size="17.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button fx:id="btnClass" focusTraversable="false" layoutX="7.0" layoutY="256.0" mnemonicParsing="false" onAction="#btnClassOnAction" prefHeight="11.0" prefWidth="204.0" styleClass="button1" stylesheets="@../style/DashBoardStyle.css" text="Class" textFill="WHITE">
+               <font>
+                  <Font size="17.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button fx:id="btnExtraClass" focusTraversable="false" layoutX="7.0" layoutY="301.0" mnemonicParsing="false" onAction="#btnExtraClassOnAction" prefHeight="11.0" prefWidth="204.0" styleClass="button1" stylesheets="@../style/DashBoardStyle.css" text="Extra Class" textFill="WHITE">
+               <font>
+                  <Font size="17.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button fx:id="btnInfo" focusTraversable="false" layoutX="7.0" layoutY="346.0" mnemonicParsing="false" onAction="#btnInfoOnAction" prefHeight="11.0" prefWidth="204.0" styleClass="button1" stylesheets="@../style/DashBoardStyle.css" text="View Information" textFill="WHITE">
+               <font>
+                  <Font size="17.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button fx:id="btnSendMails" focusTraversable="false" layoutX="7.0" layoutY="391.0" mnemonicParsing="false" onAction="#btnSendMailsOnAction" prefHeight="11.0" prefWidth="204.0" styleClass="button1" stylesheets="@../style/DashBoardStyle.css" text="Send Mails" textFill="WHITE">
+               <font>
+                  <Font size="17.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button fx:id="btnRefunds" focusTraversable="false" layoutX="8.0" layoutY="436.0" mnemonicParsing="false" onAction="#btnRefundsOnAction" prefHeight="11.0" prefWidth="204.0" styleClass="button1" stylesheets="@../style/DashBoardStyle.css" text="Refunds" textFill="WHITE">
+               <font>
+                  <Font size="17.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button fx:id="btnIncomeExpenditure" focusTraversable="false" layoutX="7.0" layoutY="481.0" mnemonicParsing="false" onAction="#btnIncomeExpenditureOnAction" prefHeight="11.0" prefWidth="204.0" styleClass="button1" stylesheets="@../style/DashBoardStyle.css" text="Income &amp; Expenditure" textFill="WHITE">
+               <font>
+                  <Font size="17.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Separator layoutX="10.0" layoutY="99.0" opacity="0.8" prefWidth="200.0" />
+            <Button fx:id="btnReports" focusTraversable="false" layoutX="7.0" layoutY="526.0" mnemonicParsing="false" onAction="#btnReportsOnAction" prefHeight="11.0" prefWidth="204.0" styleClass="button1" stylesheets="@../style/DashBoardStyle.css" text="Reports" textFill="WHITE">
+               <font>
+                  <Font size="17.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button fx:id="btnAddNewStudent" layoutX="30.0" layoutY="160.0" mnemonicParsing="false" onAction="#btnAddNewStudentOnAction" onMouseExited="#btnAddNewStudentOnMouseExited" onMouseMoved="#btnAddNewStudentOnMouseMoved" prefHeight="25.0" prefWidth="190.0" styleClass="popUpButton" stylesheets="@../style/DashBoardStyle.css" text="Students Registration" textFill="WHITE" visible="false">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button fx:id="btnManageStudent" layoutX="30.0" layoutY="185.0" mnemonicParsing="false" onAction="#btnManageStudentOnAction" onMouseExited="#btnManageStudentsOnMouseExited" onMouseMoved="#btnManageStudentsOnMouseMoved" prefHeight="25.0" prefWidth="190.0" styleClass="popUpButton" stylesheets="@../style/DashBoardStyle.css" text="Manage Students" textFill="WHITE" visible="false">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button fx:id="btnAddStudentsToClasses" layoutX="30.0" layoutY="210.0" mnemonicParsing="false" onAction="#btnAddStudentsToClassesOnAction" onMouseExited="#btnAddStudentsToClassesOnMouseExited" onMouseMoved="#btnAddStudentsToClassesOnMouseMoved" prefHeight="25.0" prefWidth="190.0" styleClass="popUpButton" stylesheets="@../style/DashBoardStyle.css" text="Add Students To Classes" textFill="WHITE" visible="false">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button fx:id="btnAddNewClass" layoutX="30.0" layoutY="294.0" mnemonicParsing="false" onAction="#btnAddNewClassOnAction" onMouseExited="#btnAddNewClassOnMouseExited" onMouseMoved="#btnAddNewClassOnMouseMoved" prefHeight="25.0" prefWidth="190.0" styleClass="popUpButton" stylesheets="@../style/DashBoardStyle.css" text="Add New Class" textFill="WHITE" visible="false">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button fx:id="btnManageClass" layoutX="30.0" layoutY="319.0" mnemonicParsing="false" onAction="#btnManageClassOnAction" onMouseExited="#btnManageClassOnMouseExited" onMouseMoved="#btnManageClassOnMouseMoved" prefHeight="25.0" prefWidth="190.0" styleClass="popUpButton" stylesheets="@../style/DashBoardStyle.css" text="Manage Classes" textFill="WHITE" visible="false">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button fx:id="btnAddNewExtraClass" layoutX="30.0" layoutY="340.0" mnemonicParsing="false" onAction="#btnAddNewExtraClassOnAction" onMouseExited="#btnAddNewExtraClassOnMouseExited" onMouseMoved="#btnAddNewExtraClassOnMouseMoved" prefHeight="25.0" prefWidth="190.0" styleClass="popUpButton" stylesheets="@../style/DashBoardStyle.css" text="Add New Extra Class" textFill="WHITE" visible="false">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button fx:id="btnManageExtraClass" layoutX="30.0" layoutY="365.0" mnemonicParsing="false" onAction="#btnManageExtraClassOnAction" onMouseExited="#btnManageExtraClassesOnMouseExited" onMouseMoved="#btnManageExtraClassesOnMouseMoved" prefHeight="25.0" prefWidth="190.0" styleClass="popUpButton" stylesheets="@../style/DashBoardStyle.css" text="Manage Extra Classes" textFill="WHITE" visible="false">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Label fx:id="lblUser" alignment="TOP_LEFT" contentDisplay="CENTER" layoutX="85.0" layoutY="55.0" prefHeight="21.0" prefWidth="134.0" text="Ruvini Ranagathara" textFill="WHITE">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" contentDisplay="CENTER" layoutX="82.0" layoutY="22.0" prefHeight="36.0" prefWidth="59.0" text="Hey," textAlignment="JUSTIFY" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="25.0" />
+               </font>
+            </Label>
+            <ImageView fx:id="assistantImage" fitHeight="51.0" fitWidth="51.0" layoutX="15.0" layoutY="22.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../asset/image/assistantImage.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="234.0" layoutY="106.0" prefHeight="581.0" prefWidth="1117.0" styleClass="pane2" stylesheets="@../style/DashBoardStyle.css">
+         <children>
+            <AnchorPane fx:id="dashboardContext" layoutY="1.0" prefHeight="587.0" prefWidth="746.0" styleClass="contextPane" stylesheets="@../style/DashBoardStyle.css" />
+            <AnchorPane layoutX="771.0" layoutY="51.0" opacity="0.68" prefHeight="407.0" prefWidth="334.0" styleClass="schedulePane" stylesheets="@../style/DashBoardStyle.css">
+               <children>
+                  <TableView fx:id="tblSchedule" layoutX="3.0" layoutY="27.0" prefHeight="181.0" prefWidth="328.0" styleClass="schedulePane" stylesheets="@../style/DashBoardStyle.css">
+                     <columns>
+                        <TableColumn fx:id="colSubject" prefWidth="92.0" text="Subject" />
+                        <TableColumn fx:id="colGrade" prefWidth="60.0" text="Grade" />
+                        <TableColumn fx:id="colHallNo" prefWidth="45.0" text="Hall" />
+                        <TableColumn fx:id="colStartTime" prefWidth="65.0" text="Start Time" />
+                        <TableColumn fx:id="colEndTime" prefWidth="65.0" text="End Time" />
+                     </columns>
+                  </TableView>
+                  <TableView fx:id="tblEClassSchedule" layoutX="3.0" layoutY="258.0" prefHeight="128.0" prefWidth="328.0" styleClass="schedulePane" stylesheets="@../style/DashBoardStyle.css">
+                     <columns>
+                        <TableColumn fx:id="colEClassSubject" prefWidth="79.0" text="Subject" />
+                        <TableColumn fx:id="colEClassGrade" prefWidth="61.0" text="Grade" />
+                        <TableColumn fx:id="colEClassHall" prefWidth="57.0" text="Hall" />
+                        <TableColumn fx:id="colEClassStartTime" prefWidth="65.0" text="Start Time" />
+                        <TableColumn fx:id="colEClassEndTime" prefWidth="65.0" text="End Time" />
+                     </columns>
+                  </TableView>
+                  <Label layoutX="129.0" layoutY="232.0" stylesheets="@../style/DashBoardStyle.css" text="Extra Classes" textFill="WHITE">
+                     <font>
+                        <Font size="17.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="813.0" layoutY="472.0" prefHeight="70.0" prefWidth="253.0" style="-fx-background-color: #F2F2F2;" styleClass="contactPane" stylesheets="@../style/DashBoardStyle.css">
+               <children>
+                  <Label fx:id="lblDashboardContactNo" layoutX="100.0" layoutY="10.0" prefHeight="27.0" prefWidth="117.0" text="0776628489">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+               </children></AnchorPane>
+            <Separator layoutX="756.0" layoutY="13.0" opacity="0.6" orientation="VERTICAL" prefHeight="558.0" prefWidth="0.0" />
+            <Label alignment="CENTER" layoutX="871.0" layoutY="482.0" prefHeight="27.0" prefWidth="42.0" text="Tel :  " textFill="#393232">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="lblDashboardEmail" layoutX="877.0" layoutY="509.0" prefHeight="19.0" prefWidth="184.0" text="vidathyainstitute@gmail.com" textFill="#393232">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Label>
+            <Label layoutX="826.0" layoutY="2.0" opacity="0.77" prefHeight="45.0" prefWidth="229.0" text="Today Schedule" textFill="#8d0f0f">
+               <font>
+                  <Font name="System Bold" size="30.0" />
+               </font>
+            </Label>
+            <Label fx:id="lblExit" layoutX="990.0" layoutY="567.0" prefHeight="17.0" prefWidth="24.0" text="Exit" textFill="#726565">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font></Label>
+            <Button fx:id="btnExit" focusTraversable="false" layoutX="1026.0" layoutY="550.0" mnemonicParsing="false" onAction="#btnExitOnAction" onMouseExited="#btnExitOnMouseExited" onMouseMoved="#btnExitOnMouseMoved" prefHeight="29.0" prefWidth="59.0" styleClass="backButton" stylesheets="@../style/DashBoardStyle.css" text="Exit" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Label layoutX="836.0" layoutY="509.0" prefHeight="19.0" prefWidth="42.0" text="Email : " textFill="#393232">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="1071.0" layoutY="15.0" prefHeight="80.0" prefWidth="229.0" styleClass="contactPane" stylesheets="@../style/DashBoardStyle.css" />
+      <Label fx:id="lblTime" alignment="CENTER" layoutX="1097.0" layoutY="10.0" prefHeight="45.0" prefWidth="176.0" text="11 : 24" textAlignment="CENTER" textFill="#8d8b8b">
+         <font>
+            <Font name="System Bold" size="48.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblDate" alignment="CENTER" layoutX="1079.0" layoutY="65.0" prefHeight="27.0" prefWidth="220.0" styleClass="contactPane" text="2022-November-11" textAlignment="CENTER" textFill="#8d8b8b">
+         <font>
+            <Font name="Arial Bold" size="23.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblFormName" alignment="CENTER" layoutX="429.0" layoutY="13.0" prefHeight="94.0" prefWidth="361.0" text="Dashboard" textFill="#00000073">
+         <font>
+            <Font name="System Bold" size="65.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

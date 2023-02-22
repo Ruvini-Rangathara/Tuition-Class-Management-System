@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="context" prefHeight="587.0" prefWidth="746.0" stylesheets="@../style/DashBoardStyle.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.vidathya.tcms.controller.NewUserFormController">
+   <children>
+      <AnchorPane prefHeight="587.0" prefWidth="746.0" styleClass="formPane" stylesheets="@../style/DashBoardStyle.css" />
+      <ImageView fitHeight="587.0" fitWidth="746.0" opacity="0.5" pickOnBounds="true">
+         <image>
+            <Image url="@../asset/image/background.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="532.0" layoutY="102.0" prefHeight="21.0" prefWidth="56.0" text="Date  :  ">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="99.0" layoutY="262.0" prefHeight="21.0" prefWidth="161.0" text="Username                 : ">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="99.0" layoutY="307.0" prefHeight="21.0" prefWidth="161.0" text="Password                  :">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="99.0" layoutY="397.0" prefHeight="21.0" prefWidth="161.0" text="Re-Enter Password  :">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="207.0" layoutY="19.0" opacity="0.6" prefHeight="61.0" prefWidth="319.0" text="Add New User" textFill="#610780">
+         <font>
+            <Font name="Segoe UI" size="50.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblDate" layoutX="591.0" layoutY="102.0" prefHeight="21.0" prefWidth="105.0" textFill="#861d1d">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Button fx:id="btnCancel" layoutX="520.0" layoutY="419.0" mnemonicParsing="false" onAction="#btnCancelOnAction" prefHeight="30.0" prefWidth="156.0" styleClass="cancelButton" stylesheets="@../style/DashBoardStyle.css" text="Cancel" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Label fx:id="lblInvalidUsername" layoutX="260.0" layoutY="284.0" prefHeight="17.0" prefWidth="115.0" text="Invalid Username" textFill="#d0312d" />
+      <Label fx:id="lblInvalidPassword" layoutX="260.0" layoutY="329.0" prefHeight="17.0" prefWidth="105.0" text="Invalid Password" textFill="#d0312d" />
+      <Button fx:id="btnAddUser" layoutX="519.0" layoutY="367.0" mnemonicParsing="false" onAction="#btnAddUserOnAction" prefHeight="30.0" prefWidth="156.0" style=": #4169e1;" styleClass="searchButton" stylesheets="@../style/DashBoardStyle.css" text="Add User" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Label layoutX="99.0" layoutY="352.0" prefHeight="21.0" prefWidth="161.0" text="Password Hint         :">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblInvalidPasswordHint" layoutX="260.0" layoutY="375.0" prefHeight="17.0" prefWidth="115.0" text="Invalid Password Hint" textFill="#d0312d" />
+      <Label layoutX="99.0" layoutY="172.0" prefHeight="21.0" prefWidth="161.0" text="Staff ID                      : ">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblIncorrectReEnteredPassword" layoutX="260.0" layoutY="420.0" prefHeight="17.0" prefWidth="105.0" text="Incorrect Password" textFill="#d0312d" />
+      <ComboBox fx:id="cmbStaffId" layoutX="259.0" layoutY="168.0" onAction="#cmbStaffIdOnAction" opacity="0.9" prefHeight="5.0" prefWidth="197.0" styleClass="txtField" stylesheets="@../style/DashBoardStyle.css">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ComboBox>
+      <TextField fx:id="txtUsername" layoutX="259.0" layoutY="258.0" onAction="#txtUsernameOnAction" opacity="0.9" prefHeight="29.0" prefWidth="197.0" styleClass="txtField" stylesheets="@../style/DashBoardStyle.css" />
+      <TextField fx:id="txtPassword" layoutX="259.0" layoutY="303.0" onAction="#txtPasswordOnAction" opacity="0.9" prefHeight="29.0" prefWidth="197.0" styleClass="txtField" stylesheets="@../style/DashBoardStyle.css" />
+      <TextField fx:id="txtReEnterPassword" layoutX="259.0" layoutY="393.0" onAction="#txtReEnterPasswordOnAction" opacity="0.9" prefHeight="29.0" prefWidth="197.0" styleClass="txtField" stylesheets="@../style/DashBoardStyle.css" />
+      <TextField fx:id="txtPasswordHint" layoutX="259.0" layoutY="348.0" onAction="#txtPasswordHintOnAction" opacity="0.9" prefHeight="29.0" prefWidth="197.0" styleClass="txtField" stylesheets="@../style/DashBoardStyle.css" />
+      <Label layoutX="99.0" layoutY="217.0" prefHeight="21.0" prefWidth="161.0" text="Name                        : ">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtName" editable="false" layoutX="259.0" layoutY="213.0" onAction="#txtNameOnAction" opacity="0.9" prefHeight="29.0" prefWidth="197.0" styleClass="txtField" stylesheets="@../style/DashBoardStyle.css" />
+   </children>
+</AnchorPane>

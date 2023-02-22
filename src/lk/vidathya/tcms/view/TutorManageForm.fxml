@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="context" prefHeight="587.0" prefWidth="746.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.vidathya.tcms.controller.TutorManageFormController">
+   <children>
+      <AnchorPane prefHeight="587.0" prefWidth="746.0" styleClass="formPane" stylesheets="@../style/DashBoardStyle.css">
+         <children>
+            <ImageView fitHeight="587.0" fitWidth="746.0" opacity="0.5" pickOnBounds="true">
+               <image>
+                  <Image url="@../asset/image/background.jpg" />
+               </image>
+            </ImageView>
+            <Label layoutX="76.0" layoutY="197.0" prefHeight="21.0" prefWidth="124.0" text="Tutor Name      : ">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Label>
+            <Label layoutX="169.0" layoutY="109.0" prefHeight="21.0" prefWidth="56.0" text="Date  :  ">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Label>
+            <Label layoutX="76.0" layoutY="242.0" prefHeight="21.0" prefWidth="124.0" text="NIC No              : ">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Label>
+            <Label layoutX="76.0" layoutY="287.0" prefHeight="21.0" prefWidth="124.0" text="Gender              : ">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Label>
+            <Label layoutX="76.0" layoutY="332.0" prefHeight="21.0" prefWidth="124.0" text="Address             : ">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Label>
+            <Label layoutX="76.0" layoutY="377.0" prefHeight="21.0" prefWidth="124.0" text="Contact No       : ">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Label>
+            <Label layoutX="76.0" layoutY="422.0" prefHeight="21.0" prefWidth="124.0" text="Email                 : ">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Label>
+            <Label layoutX="76.0" layoutY="467.0" prefHeight="21.0" prefWidth="124.0" text="Date Of Birth    : ">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Label>
+            <Label layoutX="76.0" layoutY="512.0" prefHeight="21.0" prefWidth="124.0" text="Subject              : ">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Label>
+            <Label layoutX="315.0" layoutY="42.0" opacity="0.6" prefHeight="61.0" prefWidth="348.0" text="Manage Tutors" textFill="#610780">
+               <font>
+                  <Font name="Segoe UI" size="50.0" />
+               </font>
+            </Label>
+            <Label fx:id="lblDate" layoutX="227.0" layoutY="109.0" prefHeight="21.0" prefWidth="124.0" textFill="#861d1d">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Label>
+            <Label fx:id="lblInvalidTutorName" layoutX="208.0" layoutY="219.0" prefHeight="17.0" prefWidth="115.0" text="Invalid Tutor Name" textFill="#d0312d" />
+            <Label fx:id="lblInvalidTutorNic" layoutX="209.0" layoutY="264.0" prefHeight="17.0" prefWidth="99.0" text="Invalid Tutor NIC" textFill="#d0312d" />
+            <Label fx:id="lblInvalidTutorContactNo" layoutX="209.0" layoutY="399.0" prefHeight="17.0" prefWidth="141.0" text="Invalid Tutor Contact No" textFill="#d0312d" />
+            <Label fx:id="lblInvalidTutorEmail" layoutX="209.0" layoutY="444.0" prefHeight="17.0" prefWidth="124.0" text="Invalid Tutor Email" textFill="#d0312d" />
+            <Label fx:id="lblInvalidTutorDob" layoutX="209.0" layoutY="489.0" prefHeight="17.0" prefWidth="181.0" text="Invalid Date Format (2000-9-25)" textFill="#d0312d" />
+            <Button fx:id="btnUpdate" layoutX="527.0" layoutY="453.0" mnemonicParsing="false" onAction="#btnUpdateOnAction" prefHeight="30.0" prefWidth="156.0" style=": #4169e1;" styleClass="updateButton" stylesheets="@../style/DashBoardStyle.css" text="Update" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Label layoutX="76.0" layoutY="152.0" prefHeight="21.0" prefWidth="124.0" text="Tutor ID             : ">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Label>
+            <ComboBox fx:id="cmbTutorId" layoutX="208.0" layoutY="148.0" onAction="#cmbTutorIdOnAction" opacity="0.9" prefHeight="6.0" prefWidth="256.0" styleClass="txtField" stylesheets="@../style/DashBoardStyle.css">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </ComboBox>
+            <TextField fx:id="txtName" layoutX="208.0" layoutY="193.0" onAction="#txtNameOnAction" opacity="0.9" prefHeight="17.0" prefWidth="256.0" styleClass="txtField" stylesheets="@../style/DashBoardStyle.css" />
+            <TextField fx:id="txtNic" layoutX="208.0" layoutY="238.0" onAction="#txtNicOnAction" opacity="0.9" prefHeight="7.0" prefWidth="256.0" styleClass="txtField" stylesheets="@../style/DashBoardStyle.css" />
+            <ComboBox fx:id="cmbGender" layoutX="208.0" layoutY="283.0" onAction="#cmbGenderOnAction" opacity="0.9" prefHeight="17.0" prefWidth="256.0" styleClass="txtField" stylesheets="@../style/DashBoardStyle.css">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </ComboBox>
+            <TextField fx:id="txtAddress" layoutX="208.0" layoutY="328.0" onAction="#txtAddressOnAction" opacity="0.9" prefHeight="7.0" prefWidth="256.0" styleClass="txtField" stylesheets="@../style/DashBoardStyle.css" />
+            <TextField fx:id="txtContactNo" layoutX="208.0" layoutY="373.0" onAction="#txtContactNoOnAction" opacity="0.9" prefHeight="6.0" prefWidth="256.0" styleClass="txtField" stylesheets="@../style/DashBoardStyle.css" />
+            <TextField fx:id="txtEmail" layoutX="208.0" layoutY="418.0" onAction="#txtEmailOnAction" opacity="0.9" prefHeight="0.0" prefWidth="256.0" styleClass="txtField" stylesheets="@../style/DashBoardStyle.css" />
+            <TextField fx:id="txtDob" layoutX="208.0" layoutY="463.0" onAction="#txtDobOnAction" opacity="0.9" prefHeight="9.0" prefWidth="256.0" styleClass="txtField" stylesheets="@../style/DashBoardStyle.css" />
+            <Button fx:id="btnCancel" layoutX="527.0" layoutY="504.0" mnemonicParsing="false" onAction="#btnCancelOnAction" prefHeight="30.0" prefWidth="156.0" styleClass="backButton" stylesheets="@../style/DashBoardStyle.css" text="Back" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <TextField fx:id="txtSubject" layoutX="208.0" layoutY="508.0" onAction="#txtSubjectOnAction" opacity="0.9" prefHeight="6.0" prefWidth="256.0" styleClass="txtField" stylesheets="@../style/DashBoardStyle.css" />
+            <ImageView fx:id="tutorImage" fitHeight="95.0" fitWidth="95.0" layoutX="66.0" layoutY="34.0" pickOnBounds="true">
+               <image>
+                  <Image url="@../asset/image/adminImage.png" />
+               </image>
+            </ImageView>
+            <Button fx:id="btnBrowseImage" layoutX="526.0" layoutY="404.0" mnemonicParsing="false" onAction="#btnBrowseImageOnAction" prefHeight="30.0" prefWidth="156.0" styleClass="okButton" stylesheets="@../style/DashBoardStyle.css" text="Browse Image" textFill="WHITE" wrapText="true">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

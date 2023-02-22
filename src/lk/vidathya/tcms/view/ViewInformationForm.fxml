@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="context" prefHeight="587.0" prefWidth="746.0" styleClass="formPane" stylesheets="@../style/DashBoardStyle.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.vidathya.tcms.controller.ViewInformationFormController">
+   <children>
+      <ImageView fitHeight="587.0" fitWidth="746.0" opacity="0.5" pickOnBounds="true">
+         <image>
+            <Image url="@../asset/image/background.jpg" />
+         </image>
+      </ImageView>
+      <Button fx:id="btnStaff" focusTraversable="false" mnemonicParsing="false" onAction="#btnStaffOnAction" prefHeight="30.0" prefWidth="107.0" styleClass="menuButton" stylesheets="@../style/DashBoardStyle.css" text="Staff" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button fx:id="btnStudents" focusTraversable="false" layoutX="107.0" mnemonicParsing="false" onAction="#btnStudentsOnAction" prefHeight="30.0" prefWidth="107.0" styleClass="menuButton" stylesheets="@../style/DashBoardStyle.css" text="Students" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button fx:id="btnTutors" focusTraversable="false" layoutX="214.0" mnemonicParsing="false" onAction="#btnTutorsOnAction" prefHeight="30.0" prefWidth="107.0" styleClass="menuButton" stylesheets="@../style/DashBoardStyle.css" text="Tutors" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button fx:id="btnClasses" focusTraversable="false" layoutX="321.0" mnemonicParsing="false" onAction="#btnClassesOnAction" prefHeight="30.0" prefWidth="107.0" styleClass="menuButton" stylesheets="@../style/DashBoardStyle.css" text="Classes" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button fx:id="btnHalls" focusTraversable="false" layoutX="428.0" mnemonicParsing="false" onAction="#btnHallsOnAction" prefHeight="30.0" prefWidth="105.0" styleClass="menuButton" stylesheets="@../style/DashBoardStyle.css" text="Halls" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button fx:id="btnPayments" focusTraversable="false" layoutX="533.0" mnemonicParsing="false" onAction="#btnPaymentsOnAction" prefHeight="30.0" prefWidth="106.0" styleClass="menuButton" stylesheets="@../style/DashBoardStyle.css" text="Payments" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button fx:id="btnAttendance" focusTraversable="false" layoutX="639.0" mnemonicParsing="false" onAction="#btnAttendanceOnAction" prefHeight="30.0" prefWidth="107.0" styleClass="menuButton" stylesheets="@../style/DashBoardStyle.css" text="Attendance" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <AnchorPane fx:id="viewInfoContext" layoutX="8.0" layoutY="39.0" prefHeight="505.0" prefWidth="731.0">
+         <children>
+            <AnchorPane prefHeight="505.0" prefWidth="731.0" style="-fx-background-radius: 25;" styleClass="pane2" stylesheets="@../style/DashBoardStyle.css" />
+         </children>
+      </AnchorPane>
+      <Button fx:id="btnStaffInfo" layoutX="7.0" layoutY="32.0" mnemonicParsing="false" onAction="#btnStaffInfoOnAction" onMouseExited="#btnStaffInfoOnMouseExited" onMouseMoved="#btnStaffInfoOnMouseMoved" prefHeight="31.0" prefWidth="100.0" styleClass="popUpButton2" stylesheets="@../style/DashBoardStyle.css" text="Staff Info" textFill="WHITE" visible="false">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button fx:id="btnStaffSalary" layoutX="7.0" layoutY="63.0" mnemonicParsing="false" onAction="#btnStaffSalaryOnAction" onMouseExited="#btnStaffSalaryOnMouseExited" onMouseMoved="#btnStaffSalaryOnMouseMoved" prefHeight="31.0" prefWidth="100.0" styleClass="popUpButton2" stylesheets="@../style/DashBoardStyle.css" text="Staff Salary" textFill="WHITE" visible="false">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button fx:id="btnStudentInfo" layoutX="112.0" layoutY="32.0" mnemonicParsing="false" onAction="#btnStudentInfoOnAction" onMouseExited="#btnStudentInfoOnMouseExited" onMouseMoved="#btnStudentInfoOnMouseMoved" prefHeight="31.0" prefWidth="127.0" styleClass="popUpButton2" stylesheets="@../style/DashBoardStyle.css" text="Student Info" textFill="WHITE" visible="false">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button fx:id="btnGuardianInfo" layoutX="112.0" layoutY="63.0" mnemonicParsing="false" onAction="#btnGuardianInfoOnAction" onMouseExited="#btnGuardianInfoOnMouseExited" onMouseMoved="#btnGuardianInfoOnMouseMoved" prefHeight="31.0" prefWidth="127.0" styleClass="popUpButton2" stylesheets="@../style/DashBoardStyle.css" text="Guardian Info" textFill="WHITE" visible="false">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button fx:id="btnTutorsInfo" layoutX="221.0" layoutY="32.0" mnemonicParsing="false" onAction="#btnTutorsInfoOnAction" onMouseExited="#btnTutorsInfoOnMouseExited" onMouseMoved="#btnTutorsInfoOnMouseMoved" prefHeight="31.0" prefWidth="100.0" styleClass="popUpButton2" stylesheets="@../style/DashBoardStyle.css" text="Tutors Info" textFill="WHITE" visible="false">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button fx:id="btnTutorSalary" layoutX="221.0" layoutY="63.0" mnemonicParsing="false" onAction="#btnTutorSalaryOnAction" onMouseExited="#btnTutorSalaryOnExited" onMouseMoved="#btnTutorSalaryOnMoved" prefHeight="31.0" prefWidth="100.0" styleClass="popUpButton2" stylesheets="@../style/DashBoardStyle.css" text="Salary Info" textFill="WHITE" visible="false">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button fx:id="btnClassesInfo" layoutX="325.0" layoutY="32.0" mnemonicParsing="false" onAction="#btnClassesInfoOnAction" onMouseExited="#btnClassesInfoOnMouseExited" onMouseMoved="#btnClassesInfoOnMouseMoved" prefHeight="31.0" prefWidth="115.0" styleClass="popUpButton2" stylesheets="@../style/DashBoardStyle.css" text="Classes Info" textFill="WHITE" visible="false">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button fx:id="btnClassStudents" layoutX="325.0" layoutY="63.0" mnemonicParsing="false" onAction="#btnClassStudentsOnAction" onMouseExited="#btnClassStudentsOnMouseExited" onMouseMoved="#btnClassStudentsOnMouseMoved" prefHeight="31.0" prefWidth="115.0" styleClass="popUpButton2" stylesheets="@../style/DashBoardStyle.css" text="Class Students" textFill="WHITE" visible="false">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button fx:id="btnHallInfo" layoutX="440.0" layoutY="32.0" mnemonicParsing="false" onAction="#btnHallInfoOnAction" onMouseExited="#btnHallInfoOnMouseExited" onMouseMoved="#btnHallInfoOnMouseMoved" prefHeight="31.0" prefWidth="127.0" styleClass="popUpButton2" stylesheets="@../style/DashBoardStyle.css" text="Hall Info" textFill="WHITE" visible="false">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button fx:id="btnHallReservations" layoutX="440.0" layoutY="63.0" mnemonicParsing="false" onAction="#btnHallReservationsOnAction" onMouseExited="#btnHallReservationsOnMouseExited" onMouseMoved="#btnHallReservationsOnMouseMoved" prefHeight="31.0" prefWidth="127.0" styleClass="popUpButton2" stylesheets="@../style/DashBoardStyle.css" text="Hall Reservations" textFill="WHITE" visible="false">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button fx:id="btnRegistrationFees" layoutX="567.0" layoutY="32.0" mnemonicParsing="false" onAction="#btnRegistrationFeesOnAction" onMouseExited="#btnRegistrationFeesOnMouseExited" onMouseMoved="#btnRegistrationFeesOnMouseMoved" prefHeight="31.0" prefWidth="127.0" styleClass="popUpButton2" stylesheets="@../style/DashBoardStyle.css" text="Registration Fees" textFill="WHITE" visible="false">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>a
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button fx:id="btnClassFees" layoutX="567.0" layoutY="63.0" mnemonicParsing="false" onAction="#btnClassFeesOnAction" onMouseExited="#btnClassFeesOnMouseExited" onMouseMoved="#btnClassFeesOnMouseMoved" prefHeight="31.0" prefWidth="127.0" styleClass="popUpButton2" stylesheets="@../style/DashBoardStyle.css" text="Class Fees" textFill="WHITE" visible="false">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button fx:id="btnRefunds" layoutX="567.0" layoutY="94.0" mnemonicParsing="false" onAction="#btnRefundsOnAction" onMouseExited="#btnRefundsOnMouseExited" onMouseMoved="#btnRefundsOnMouseMoved" prefHeight="31.0" prefWidth="127.0" styleClass="popUpButton2" stylesheets="@../style/DashBoardStyle.css" text="Refunds" textFill="WHITE" visible="false">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button fx:id="btnExtraClasses" layoutX="325.0" layoutY="94.0" mnemonicParsing="false" onAction="#btnExtraClassesOnAction" onMouseExited="#btnExtraClassesOnMouseExited" onMouseMoved="#btnExtraClassesOnMouseMoved" prefHeight="31.0" prefWidth="115.0" styleClass="popUpButton2" stylesheets="@../style/DashBoardStyle.css" text="Extra Classes" textFill="WHITE" visible="false">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button fx:id="btnStudentsClasses" layoutX="112.0" layoutY="94.0" mnemonicParsing="false" onAction="#btnStudentsClassesOnAction" onMouseExited="#btnStudentsClassesOnMouseExited" onMouseMoved="#btnStudentsClassesOnMouseMoved" prefHeight="31.0" prefWidth="127.0" styleClass="popUpButton2" stylesheets="@../style/DashBoardStyle.css" text="Students' Classes" textFill="WHITE" visible="false">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <ImageView fitHeight="25.0" fitWidth="25.0" layoutX="25.0" layoutY="553.0" onMouseClicked="#backImageOnMouseClicked" opacity="0.6" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../asset/icon/arrowBackIcon.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>
